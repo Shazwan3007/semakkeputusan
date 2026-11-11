@@ -6,811 +6,720 @@
 <meta name="theme-color" content="#122B45">
 <meta name="description" content="Semak kelayakan SPM untuk program Asasi dan Diploma.">
 <title>Semak Program Pengajian</title>
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 :root{
-  --navy:#122B45;
-  --navy2:#1B4268;
-  --blue:#176384;
-  --green:#087E63;
-  --light:#F5F8FB;
-  --text:#172A3E;
-  --muted:#617487;
-  --border:#DCE5EC;
-  --shadow:0 20px 65px rgba(4,24,47,.17);
+ --navy:#122B45;
+ --navy2:#1B4268;
+ --blue:#176384;
+ --green:#087E63;
+ --light:#F5F8FB;
+ --text:#172A3E;
+ --muted:#617487;
+ --border:#DCE5EC;
+ --shadow:0 20px 65px rgba(4,24,47,.17);
 }
-
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{
-  margin:0;
-  font-family:Inter,Arial,sans-serif;
-  color:var(--text);
-  background:var(--navy);
-  -webkit-font-smoothing:antialiased;
+ margin:0;
+ font-family:Inter,Arial,sans-serif;
+ color:var(--text);
+ background:var(--navy);
+ -webkit-font-smoothing:antialiased;
 }
 button,input,select{font:inherit}
 button{cursor:pointer}
 button:disabled{opacity:.45;cursor:not-allowed}
-button:focus-visible,
-input:focus-visible,
-select:focus-visible,
-a:focus-visible{
-  outline:3px solid #4FB8D7;
-  outline-offset:2px;
+button:focus-visible,input:focus-visible,
+select:focus-visible,a:focus-visible{
+ outline:3px solid #4FB8D7;
+ outline-offset:2px;
 }
-
 .hero{
-  min-height:100svh;
-  display:flex;
-  align-items:center;
-  background:
-    radial-gradient(ellipse at 10% 0%,#28618A 0%,transparent 43%),
-    linear-gradient(130deg,#183F65,#122B45 70%);
-  padding:55px 22px;
-  position:relative;
-  overflow:hidden;
-  overflow-anchor:none;
+ min-height:100svh;
+ display:flex;
+ align-items:center;
+ background:
+ radial-gradient(ellipse at 10% 0%,#28618A 0%,transparent 43%),
+ linear-gradient(130deg,#183F65,#122B45 70%);
+ padding:55px 22px;
+ position:relative;
+ overflow:hidden;
+ overflow-anchor:none;
 }
 .hero:before{
-  content:"";
-  position:absolute;
-  width:520px;
-  height:520px;
-  border:1px solid #ffffff12;
-  border-radius:50%;
-  right:-260px;
-  bottom:-300px;
-  pointer-events:none;
+ content:"";
+ position:absolute;
+ width:520px;height:520px;
+ border:1px solid #ffffff12;
+ border-radius:50%;
+ right:-260px;bottom:-300px;
+ pointer-events:none;
 }
 .container{
-  max-width:1200px;
-  width:100%;
-  margin:auto;
-  display:grid;
-  grid-template-columns:.83fr 1.17fr;
-  align-items:center;
-  gap:65px;
-  position:relative;
-  z-index:1;
+ max-width:1200px;
+ width:100%;
+ margin:auto;
+ display:grid;
+ grid-template-columns:.83fr 1.17fr;
+ align-items:center;
+ gap:65px;
+ position:relative;
+ z-index:1;
 }
 .intro{color:#fff}
 .eyebrow{
-  display:inline-flex;
-  align-items:center;
-  gap:9px;
-  color:#A8DAEC;
-  font-size:12px;
-  font-weight:800;
-  letter-spacing:2px;
-  text-transform:uppercase;
-  margin-bottom:24px;
+ display:inline-flex;
+ align-items:center;
+ gap:9px;
+ color:#A8DAEC;
+ font-size:12px;
+ font-weight:800;
+ letter-spacing:2px;
+ text-transform:uppercase;
+ margin-bottom:24px;
 }
 .eyebrow:before{
-  content:"";
-  width:8px;
-  height:8px;
-  background:#4FD6AA;
-  border-radius:50%;
+ content:"";
+ width:8px;height:8px;
+ background:#4FD6AA;
+ border-radius:50%;
 }
 h1,h2,h3,p{margin-top:0}
-h1,h2,h3{
-  font-family:Manrope,Inter,sans-serif;
-}
+h1,h2,h3{font-family:Manrope,Inter,sans-serif}
 h1{
-  font-size:clamp(34px,4vw,55px);
-  line-height:1.13;
-  font-weight:800;
-  letter-spacing:-2px;
-  margin-bottom:24px;
+ font-size:clamp(34px,4vw,55px);
+ line-height:1.13;
+ font-weight:800;
+ letter-spacing:-2px;
+ margin-bottom:24px;
 }
 .intro p{
-  font-size:16px;
-  line-height:1.85;
-  color:#DAE7F1;
-  max-width:480px;
+ font-size:16px;
+ line-height:1.85;
+ color:#DAE7F1;
+ max-width:480px;
 }
 .benefits{
-  display:grid;
-  gap:15px;
-  margin-top:38px;
+ display:grid;
+ gap:15px;
+ margin-top:38px;
 }
 .benefit{
-  display:flex;
-  gap:12px;
-  align-items:center;
-  font-size:14px;
-  color:#EAF5F9;
+ display:flex;
+ gap:12px;
+ align-items:center;
+ font-size:14px;
+ color:#EAF5F9;
 }
 .tick{
-  width:24px;
-  height:24px;
-  border-radius:50%;
-  background:#ffffff17;
-  display:grid;
-  place-items:center;
-  color:#6FE2B8;
-  font-weight:800;
+ width:24px;height:24px;
+ border-radius:50%;
+ background:#ffffff17;
+ display:grid;
+ place-items:center;
+ color:#6FE2B8;
+ font-weight:800;
 }
 .footerline{
-  margin-top:35px;
-  font-size:12px;
-  color:#B1C5D4;
-  line-height:1.7;
+ margin-top:35px;
+ font-size:12px;
+ color:#B1C5D4;
+ line-height:1.7;
 }
 .panel{
-  background:white;
-  border-radius:24px;
-  padding:36px;
-  box-shadow:var(--shadow);
-  min-width:0;
-  overflow-anchor:none;
+ background:white;
+ border-radius:24px;
+ padding:36px;
+ box-shadow:var(--shadow);
+ min-width:0;
+ overflow-anchor:none;
 }
 .progress{
-  height:5px;
-  background:#EDF1F5;
-  border-radius:12px;
-  overflow:hidden;
-  margin-bottom:30px;
+ height:5px;
+ background:#EDF1F5;
+ border-radius:12px;
+ overflow:hidden;
+ margin-bottom:30px;
 }
 .progress div{
-  height:100%;
-  background:linear-gradient(90deg,#176384,#087E63);
-  width:33.33%;
-  transition:width .35s ease;
-  border-radius:12px;
+ height:100%;
+ background:linear-gradient(90deg,#176384,#087E63);
+ width:33.33%;
+ transition:width .35s ease;
+ border-radius:12px;
 }
 .stepmeta{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:12px;
-  margin-bottom:14px;
+ display:flex;
+ align-items:center;
+ justify-content:space-between;
+ gap:12px;
+ margin-bottom:14px;
 }
 .kicker{
-  color:var(--blue);
-  font-size:11px;
-  letter-spacing:1.2px;
-  text-transform:uppercase;
-  font-weight:800;
+ color:var(--blue);
+ font-size:11px;
+ letter-spacing:1.2px;
+ text-transform:uppercase;
+ font-weight:800;
 }
 .percent{
-  font-size:12px;
-  color:var(--muted);
-  font-weight:700;
+ font-size:12px;
+ color:var(--muted);
+ font-weight:700;
 }
 h2{
-  font-size:clamp(22px,2.4vw,27px);
-  letter-spacing:-.8px;
-  line-height:1.35;
-  font-weight:800;
-  margin-bottom:10px;
+ font-size:clamp(22px,2.4vw,27px);
+ letter-spacing:-.8px;
+ line-height:1.35;
+ font-weight:800;
+ margin-bottom:10px;
 }
 .desc{
-  font-size:13px;
-  line-height:1.75;
-  color:var(--muted);
-  margin-bottom:22px;
+ font-size:13px;
+ line-height:1.75;
+ color:var(--muted);
+ margin-bottom:22px;
 }
-.section{
-  display:none;
-  animation:fade .3s ease;
-}
+.section{display:none;animation:fade .3s ease}
 .section.active{display:block}
 @keyframes fade{
-  from{
-    opacity:0;
-    transform:translateY(8px);
-  }
-  to{
-    opacity:1;
-    transform:translateY(0);
-  }
+ from{opacity:0;transform:translateY(8px)}
+ to{opacity:1;transform:translateY(0)}
 }
 .fieldtitle{
-  font-size:12px;
-  font-weight:800;
-  color:var(--navy);
-  margin:20px 0 12px;
+ font-size:12px;
+ font-weight:800;
+ color:var(--navy);
+ margin:20px 0 12px;
 }
 .subjectrow{
-  display:grid;
-  grid-template-columns:minmax(0,1fr) 135px 34px;
-  align-items:start;
-  gap:9px;
-  margin-bottom:10px;
+ display:grid;
+ grid-template-columns:minmax(0,1fr) 135px 34px;
+ align-items:start;
+ gap:9px;
+ margin-bottom:10px;
 }
 .subjectrow.fixed{
-  grid-template-columns:minmax(0,1fr) 135px;
+ grid-template-columns:minmax(0,1fr) 135px;
 }
-.fieldwrap{
-  min-width:0;
-  position:relative;
-}
+.fieldwrap{min-width:0;position:relative}
 .subjectrow select,
-.subjectrow input,
-.textinput{
-  width:100%;
-  min-width:0;
-  height:45px;
-  border:1px solid var(--border);
-  background:#fff;
-  border-radius:10px;
-  padding:0 12px;
-  color:var(--text);
-  font-size:13px;
+.subjectrow input,.textinput{
+ width:100%;
+ min-width:0;
+ height:45px;
+ border:1px solid var(--border);
+ background:#fff;
+ border-radius:10px;
+ padding:0 12px;
+ color:var(--text);
+ font-size:13px;
 }
 .subjectrow input:disabled{
-  background:#fff;
-  opacity:1;
-  -webkit-text-fill-color:var(--text);
+ background:#fff;
+ opacity:1;
+ -webkit-text-fill-color:var(--text);
 }
 .subjectrow select:focus,
-.subjectrow input:focus,
-.textinput:focus{
-  border-color:var(--blue);
+.subjectrow input:focus,.textinput:focus{
+ border-color:var(--blue);
 }
 .field-error{
-  color:#B22936;
-  font-size:11px;
-  line-height:1.45;
-  margin:5px 0 0;
-  display:none;
+ color:#B22936;
+ font-size:11px;
+ line-height:1.45;
+ margin:5px 0 0;
+ display:none;
 }
 .field-error.visible{display:block}
 .invalid{
-  border-color:#BF3142!important;
-  background:#FFF7F8!important;
+ border-color:#BF3142!important;
+ background:#FFF7F8!important;
 }
 .remove{
-  height:34px;
-  width:34px;
-  border:0;
-  border-radius:9px;
-  background:#FCEBEC;
-  color:#B33C47;
-  font-size:20px;
+ height:34px;width:34px;
+ border:0;border-radius:9px;
+ background:#FCEBEC;
+ color:#B33C47;
+ font-size:20px;
 }
 .add{
-  border:1px dashed #91B7CB;
-  background:#F3F8FB;
-  color:var(--blue);
-  padding:13px 15px;
-  border-radius:11px;
-  width:100%;
-  font-size:12px;
-  font-weight:800;
-  margin-top:4px;
+ border:1px dashed #91B7CB;
+ background:#F3F8FB;
+ color:var(--blue);
+ padding:13px 15px;
+ border-radius:11px;
+ width:100%;
+ font-size:12px;
+ font-weight:800;
+ margin-top:4px;
 }
 .note{
-  background:#F0F7FA;
-  color:#476477;
-  border:1px solid #D9EBF2;
-  border-radius:12px;
-  padding:13px 15px;
-  font-size:12px;
-  line-height:1.7;
-  margin-top:19px;
+ background:#F0F7FA;
+ color:#476477;
+ border:1px solid #D9EBF2;
+ border-radius:12px;
+ padding:13px 15px;
+ font-size:12px;
+ line-height:1.7;
+ margin-top:19px;
 }
 .completion{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  margin:12px 0 4px;
-  color:var(--muted);
-  font-size:11px;
-  font-weight:600;
+ display:flex;
+ align-items:center;
+ gap:10px;
+ margin:12px 0 4px;
+ color:var(--muted);
+ font-size:11px;
+ font-weight:600;
 }
 .completion-track{
-  flex:1;
-  min-width:50px;
-  height:5px;
-  background:#E9EFF3;
-  border-radius:10px;
-  overflow:hidden;
+ flex:1;
+ min-width:50px;
+ height:5px;
+ background:#E9EFF3;
+ border-radius:10px;
+ overflow:hidden;
 }
 .completion-fill{
-  height:100%;
-  width:0;
-  background:#087E63;
-  transition:width .2s;
+ height:100%;
+ width:0;
+ background:#087E63;
+ transition:width .2s;
 }
 .actions{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:12px;
-  margin-top:27px;
+ display:flex;
+ align-items:center;
+ justify-content:space-between;
+ gap:12px;
+ margin-top:27px;
 }
 .btn{
-  display:inline-flex;
-  justify-content:center;
-  align-items:center;
-  gap:9px;
-  padding:14px 22px;
-  border-radius:11px;
-  border:0;
-  font-weight:800;
-  font-size:13px;
-  transition:.2s ease;
+ display:inline-flex;
+ justify-content:center;
+ align-items:center;
+ gap:9px;
+ padding:14px 22px;
+ border-radius:11px;
+ border:0;
+ font-weight:800;
+ font-size:13px;
+ transition:.2s ease;
 }
-.btn-primary{
-  background:var(--navy);
-  color:white;
-}
+.btn-primary{background:var(--navy);color:white}
 .btn-primary:hover:not(:disabled){
-  background:var(--blue);
-  transform:translateY(-1px);
+ background:var(--blue);
+ transform:translateY(-1px);
 }
-.btn-back{
-  background:#F1F5F8;
-  color:var(--navy);
-}
+.btn-back{background:#F1F5F8;color:var(--navy)}
 .btn-wa{
-  color:white;
-  background:#0B986C;
-  width:100%;
-  text-decoration:none;
-  font-size:14px;
-  padding:17px;
+ color:white;
+ background:#0B986C;
+ width:100%;
+ text-decoration:none;
+ font-size:14px;
+ padding:17px;
 }
 .btn-wa:hover{background:#087957}
-
-/* CARIAN SUBJEK TAMBAHAN */
 .subject-dropdown{
-  display:none;
-  position:absolute;
-  top:calc(100% + 3px);
-  left:0;
-  right:0;
-  max-height:210px;
-  overflow-y:auto;
-  background:white;
-  border:1px solid #B4CBD8;
-  box-shadow:0 10px 30px #122b4525;
-  border-radius:10px;
-  z-index:30;
-  padding:5px;
+ display:none;
+ position:absolute;
+ top:calc(100% + 3px);
+ left:0;right:0;
+ max-height:210px;
+ overflow-y:auto;
+ background:white;
+ border:1px solid #B4CBD8;
+ box-shadow:0 10px 30px #122b4525;
+ border-radius:10px;
+ z-index:30;
+ padding:5px;
 }
 .subject-dropdown.open{display:block}
 .subject-option{
-  display:block;
-  width:100%;
-  text-align:left;
-  border:0;
-  background:#fff;
-  padding:11px 10px;
-  border-radius:7px;
-  font-size:12px;
-  color:var(--text);
-  line-height:1.4;
+ display:block;
+ width:100%;
+ text-align:left;
+ border:0;
+ background:#fff;
+ padding:11px 10px;
+ border-radius:7px;
+ font-size:12px;
+ color:var(--text);
+ line-height:1.4;
 }
 .subject-option:hover,
-.subject-option:focus{
-  background:#EAF4F8;
-}
+.subject-option:focus{background:#EAF4F8}
 .subject-empty{
-  padding:12px;
-  font-size:12px;
-  color:var(--muted);
+ padding:12px;
+ font-size:12px;
+ color:var(--muted);
 }
-
 .summary{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:12px;
-  margin:20px 0;
+ display:grid;
+ grid-template-columns:1fr 1fr;
+ gap:12px;
+ margin:20px 0;
 }
 .stat{
-  border-radius:14px;
-  background:var(--light);
-  border:1px solid #EDF1F5;
-  padding:20px 8px;
-  text-align:center;
+ border-radius:14px;
+ background:var(--light);
+ border:1px solid #EDF1F5;
+ padding:20px 8px;
+ text-align:center;
 }
 .stat strong{
-  display:block;
-  font-family:Manrope;
-  font-size:28px;
-  color:var(--navy);
-  margin-bottom:5px;
+ display:block;
+ font-family:Manrope;
+ font-size:28px;
+ color:var(--navy);
+ margin-bottom:5px;
 }
-.stat span{
-  color:var(--muted);
-  font-size:11px;
-}
+.stat span{color:var(--muted);font-size:11px}
 .filter{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  background:#F0F3F6;
-  border-radius:12px;
-  padding:4px;
-  margin:18px 0 14px;
-  gap:4px;
+ display:grid;
+ grid-template-columns:repeat(3,1fr);
+ background:#F0F3F6;
+ border-radius:12px;
+ padding:4px;
+ margin:18px 0 14px;
+ gap:4px;
 }
 .filter button{
-  border:0;
-  background:transparent;
-  border-radius:9px;
-  font-weight:700;
-  font-size:12px;
-  padding:12px 5px;
-  color:#6C7C89;
+ border:0;
+ background:transparent;
+ border-radius:9px;
+ font-weight:700;
+ font-size:12px;
+ padding:12px 5px;
+ color:#6C7C89;
 }
 .filter button.on{
-  background:white;
-  color:var(--navy);
-  box-shadow:0 2px 8px #122b4510;
+ background:white;
+ color:var(--navy);
+ box-shadow:0 2px 8px #122b4510;
 }
 .searchwrap{position:relative}
-.searchwrap input{
-  padding-left:39px;
-  height:47px;
-}
+.searchwrap input{padding-left:39px;height:47px}
 .searchicon{
-  position:absolute;
-  left:14px;
-  top:13px;
-  color:#8093A3;
+ position:absolute;
+ left:14px;top:13px;
+ color:#8093A3;
 }
 .programlist{
-  display:grid;
-  gap:9px;
-  max-height:340px;
-  overflow-y:auto;
-  padding:3px 4px 3px 0;
-  margin-top:15px;
-  scrollbar-width:thin;
-  scrollbar-color:#BCD2DF transparent;
+ display:grid;
+ gap:9px;
+ max-height:340px;
+ overflow-y:auto;
+ padding:3px 4px 3px 0;
+ margin-top:15px;
+ scrollbar-width:thin;
+ scrollbar-color:#BCD2DF transparent;
 }
 .program{
-  display:flex;
-  align-items:center;
-  gap:13px;
-  border:1px solid var(--border);
-  border-radius:12px;
-  padding:14px;
-  cursor:pointer;
-  transition:.2s;
-  background:white;
+ display:flex;
+ align-items:center;
+ gap:13px;
+ border:1px solid var(--border);
+ border-radius:12px;
+ padding:14px;
+ cursor:pointer;
+ transition:.2s;
+ background:white;
 }
 .program:hover{
-  border-color:#8FBBCD;
-  background:#FBFDFE;
+ border-color:#8FBBCD;
+ background:#FBFDFE;
 }
 .program.selected{
-  border-color:var(--blue);
-  background:#F0F8FB;
-  box-shadow:inset 0 0 0 1px #17638420;
+ border-color:var(--blue);
+ background:#F0F8FB;
+ box-shadow:inset 0 0 0 1px #17638420;
 }
 .circle{
-  flex-shrink:0;
-  width:20px;
-  height:20px;
-  border:2px solid #B7C7D2;
-  border-radius:50%;
-  display:grid;
-  place-items:center;
+ flex-shrink:0;
+ width:20px;height:20px;
+ border:2px solid #B7C7D2;
+ border-radius:50%;
+ display:grid;
+ place-items:center;
 }
 .selected .circle{
-  background:var(--green);
-  border-color:var(--green);
-  color:white;
+ background:var(--green);
+ border-color:var(--green);
+ color:white;
 }
 .circle svg{display:none}
 .selected .circle svg{display:block}
 .programbody{min-width:0}
 .programbody strong{
-  display:block;
-  font-size:12px;
-  line-height:1.5;
-  color:var(--navy);
+ display:block;
+ font-size:12px;
+ line-height:1.5;
+ color:var(--navy);
 }
 .programbody small{
-  display:block;
-  font-size:10px;
-  color:var(--muted);
-  margin-top:3px;
-  line-height:1.5;
+ display:block;
+ font-size:10px;
+ color:var(--muted);
+ margin-top:3px;
+ line-height:1.5;
 }
 .selectionbar{
-  margin-top:15px;
-  color:var(--muted);
-  font-size:12px;
-  display:flex;
-  justify-content:space-between;
-  gap:10px;
+ margin-top:15px;
+ color:var(--muted);
+ font-size:12px;
+ display:flex;
+ justify-content:space-between;
+ gap:10px;
 }
 .resultbanner{
-  padding:15px;
-  border-radius:12px;
-  background:#EAF7F2;
-  border:1px solid #CBEBDD;
-  color:#17684F;
-  font-size:12px;
-  line-height:1.7;
-  margin:15px 0;
+ padding:15px;
+ border-radius:12px;
+ background:#EAF7F2;
+ border:1px solid #CBEBDD;
+ color:#17684F;
+ font-size:12px;
+ line-height:1.7;
+ margin:15px 0;
 }
 .resultbanner.warning{
-  background:#FFF7E9;
-  color:#80551B;
-  border-color:#F1DFC0;
+ background:#FFF7E9;
+ color:#80551B;
+ border-color:#F1DFC0;
 }
 .hidden{display:none!important}
 .review{
-  border:1px solid var(--border);
-  border-radius:13px;
-  overflow:hidden;
-  margin-top:18px;
+ border:1px solid var(--border);
+ border-radius:13px;
+ overflow:hidden;
+ margin-top:18px;
 }
 .reviewtitle{
-  padding:13px 16px;
-  background:#F4F7FA;
-  font-weight:800;
-  font-size:12px;
-  color:var(--navy);
+ padding:13px 16px;
+ background:#F4F7FA;
+ font-weight:800;
+ font-size:12px;
+ color:var(--navy);
 }
 .reviewcontent{
-  padding:16px;
-  font-size:12px;
-  line-height:1.9;
-  white-space:pre-wrap;
-  max-height:250px;
-  overflow:auto;
+ padding:16px;
+ font-size:12px;
+ line-height:1.9;
+ white-space:pre-wrap;
+ max-height:250px;
+ overflow:auto;
 }
 .privacy{
-  margin-top:16px;
-  color:var(--muted);
-  font-size:11px;
-  line-height:1.8;
+ margin-top:16px;
+ color:var(--muted);
+ font-size:11px;
+ line-height:1.8;
 }
 
 /* TABLET */
 @media(max-width:900px){
-  .hero{padding:38px 18px}
-  .container{
-    grid-template-columns:1fr;
-    gap:28px;
-    max-width:670px;
-  }
-  .intro h1{max-width:560px}
-  .intro p{max-width:570px}
-  .benefits{
-    display:flex;
-    flex-wrap:wrap;
-    gap:15px 24px;
-    margin-top:20px;
-  }
-  .footerline{margin-top:20px}
+ .hero{padding:38px 18px}
+ .container{
+  grid-template-columns:1fr;
+  gap:28px;
+  max-width:670px;
+ }
+ .intro h1{max-width:560px}
+ .intro p{max-width:570px}
+ .benefits{
+  display:flex;
+  flex-wrap:wrap;
+  gap:15px 24px;
+  margin-top:20px;
+ }
+ .footerline{margin-top:20px}
 }
 
 /* TELEFON */
 @media(max-width:600px){
-  html,body{
-    width:100%;
-    max-width:100%;
-    overflow-x:hidden;
-  }
-  .hero{
-    min-height:100svh;
-    padding:24px 12px 36px;
-    align-items:flex-start;
-  }
-  .container{
-    grid-template-columns:minmax(0,1fr);
-    gap:24px;
-    width:100%;
-    max-width:100%;
-  }
-  .intro{
-    width:100%;
-    min-width:0;
-  }
-  .eyebrow{
-    font-size:10px;
-    letter-spacing:1.2px;
-    margin-bottom:14px;
-  }
-  .intro h1{
-    font-size:clamp(27px,7vw,35px);
-    line-height:1.22;
-    letter-spacing:-1.1px;
-    margin-bottom:16px;
-    overflow-wrap:break-word;
-  }
-  .intro p{
-    font-size:13px;
-    line-height:1.75;
-    max-width:100%;
-  }
-  .benefits{
-    display:flex;
-    flex-wrap:wrap;
-    gap:12px 15px;
-    margin-top:20px;
-  }
-  .benefit{
-    font-size:11px;
-    gap:7px;
-  }
-  .tick{
-    width:22px;
-    height:22px;
-    flex-shrink:0;
-  }
-  .footerline{
-    font-size:11px;
-    margin-top:20px;
-    line-height:1.6;
-  }
-  .panel{
-    width:100%;
-    min-width:0;
-    padding:23px 16px;
-    border-radius:18px;
-  }
-  .progress{margin-bottom:22px}
-  h2{
-    font-size:21px;
-    line-height:1.4;
-    letter-spacing:-.5px;
-  }
-  .desc{
-    font-size:13px;
-    line-height:1.75;
-  }
-  .subjectrow.fixed{
-    grid-template-columns:minmax(0,1fr) 92px;
-    gap:8px;
-  }
-  .subjectrow.fixed input{
-    height:48px;
-    font-size:13px;
-    padding:0 10px;
-  }
-  .subjectrow.fixed select{
-    height:48px;
-    font-size:16px;
-    padding:0 8px;
-  }
-
-  /* Subjek tambahan dua baris */
-  #additionalSubjects .subjectrow{
-    display:grid;
-    grid-template-columns:minmax(0,1fr) 42px;
-    gap:8px;
-    margin-bottom:15px;
-  }
-  #additionalSubjects .namewrap{
-    grid-column:1/-1;
-    grid-row:1;
-  }
-  #additionalSubjects .gradewrap{
-    grid-column:1;
-    grid-row:2;
-  }
-  #additionalSubjects .remove{
-    grid-column:2;
-    grid-row:2;
-    width:42px;
-    height:48px;
-    border-radius:10px;
-  }
-  #additionalSubjects .subjectname,
-  #additionalSubjects .grade{
-    height:48px;
-    font-size:16px;
-    padding:0 12px;
-  }
-  .add{
-    min-height:48px;
-    font-size:13px;
-  }
-  .summary{
-    grid-template-columns:repeat(2,minmax(0,1fr));
-    gap:10px;
-  }
-  .stat{padding:17px 8px}
-  .stat strong{font-size:26px}
-  .filter{
-    width:100%;
-    gap:3px;
-  }
-  .filter button{
-    font-size:12px;
-    padding:13px 5px;
-  }
-  .searchwrap input{
-    width:100%;
-    height:50px;
-    font-size:16px;
-  }
-  .programlist{
-    max-height:380px;
-    overflow-y:auto;
-    overscroll-behavior:contain;
-    -webkit-overflow-scrolling:touch;
-  }
-  .program{
-    min-height:62px;
-    padding:14px 12px;
-    gap:12px;
-  }
-  .programbody strong{
-    font-size:13px;
-    overflow-wrap:anywhere;
-  }
-  .programbody small{font-size:11px}
-  .selectionbar{
-    flex-wrap:wrap;
-    line-height:1.5;
-  }
-  .actions{
-    gap:10px;
-    width:100%;
-  }
-  .actions .btn{
-    min-height:48px;
-    padding:12px 14px;
-    font-size:12px;
-  }
-  .actions .btn-primary{flex:1}
-  .btn-wa{
-    min-height:52px;
-    text-align:center;
-  }
-  .reviewcontent{
-    overflow-wrap:anywhere;
-  }
+ html,body{
+  width:100%;
+  max-width:100%;
+  overflow-x:hidden;
+ }
+ .hero{
+  min-height:100svh;
+  padding:24px 12px 36px;
+  align-items:flex-start;
+ }
+ .container{
+  grid-template-columns:minmax(0,1fr);
+  gap:24px;
+  width:100%;
+  max-width:100%;
+ }
+ .intro{width:100%;min-width:0}
+ .eyebrow{
+  font-size:10px;
+  letter-spacing:1.2px;
+  margin-bottom:14px;
+ }
+ .intro h1{
+  font-size:clamp(27px,7vw,35px);
+  line-height:1.22;
+  letter-spacing:-1.1px;
+  margin-bottom:16px;
+  overflow-wrap:break-word;
+ }
+ .intro p{
+  font-size:13px;
+  line-height:1.75;
+  max-width:100%;
+ }
+ .benefits{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px 15px;
+  margin-top:20px;
+ }
+ .benefit{font-size:11px;gap:7px}
+ .tick{
+  width:22px;height:22px;
+  flex-shrink:0;
+ }
+ .footerline{
+  font-size:11px;
+  margin-top:20px;
+  line-height:1.6;
+ }
+ .panel{
+  width:100%;
+  min-width:0;
+  padding:23px 16px;
+  border-radius:18px;
+ }
+ .progress{margin-bottom:22px}
+ h2{
+  font-size:21px;
+  line-height:1.4;
+  letter-spacing:-.5px;
+ }
+ .desc{
+  font-size:13px;
+  line-height:1.75;
+ }
+ .subjectrow.fixed{
+  grid-template-columns:minmax(0,1fr) 92px;
+  gap:8px;
+ }
+ .subjectrow.fixed input{
+  height:48px;
+  font-size:13px;
+  padding:0 10px;
+ }
+ .subjectrow.fixed select{
+  height:48px;
+  font-size:16px;
+  padding:0 8px;
+ }
+ #additionalSubjects .subjectrow{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 42px;
+  gap:8px;
+  margin-bottom:15px;
+ }
+ #additionalSubjects .namewrap{
+  grid-column:1/-1;
+  grid-row:1;
+ }
+ #additionalSubjects .gradewrap{
+  grid-column:1;
+  grid-row:2;
+ }
+ #additionalSubjects .remove{
+  grid-column:2;
+  grid-row:2;
+  width:42px;
+  height:48px;
+  border-radius:10px;
+ }
+ #additionalSubjects .subjectname,
+ #additionalSubjects .grade{
+  height:48px;
+  font-size:16px;
+  padding:0 12px;
+ }
+ .add{min-height:48px;font-size:13px}
+ .summary{
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:10px;
+ }
+ .stat{padding:17px 8px}
+ .stat strong{font-size:26px}
+ .filter{width:100%;gap:3px}
+ .filter button{font-size:12px;padding:13px 5px}
+ .searchwrap input{
+  width:100%;
+  height:50px;
+  font-size:16px;
+ }
+ .programlist{
+  max-height:380px;
+  overflow-y:auto;
+  overscroll-behavior:contain;
+  -webkit-overflow-scrolling:touch;
+ }
+ .program{
+  min-height:62px;
+  padding:14px 12px;
+  gap:12px;
+ }
+ .programbody strong{
+  font-size:13px;
+  overflow-wrap:anywhere;
+ }
+ .programbody small{font-size:11px}
+ .selectionbar{flex-wrap:wrap;line-height:1.5}
+ .actions{gap:10px;width:100%}
+ .actions .btn{
+  min-height:48px;
+  padding:12px 14px;
+  font-size:12px;
+ }
+ .actions .btn-primary{flex:1}
+ .btn-wa{min-height:52px;text-align:center}
+ .reviewcontent{overflow-wrap:anywhere}
 }
 @media(max-width:360px){
-  .hero{
-    padding-left:9px;
-    padding-right:9px;
-  }
-  .panel{padding:20px 12px}
-  .intro h1{font-size:27px}
-  .subjectrow.fixed{
-    grid-template-columns:minmax(0,1fr) 82px;
-    gap:6px;
-  }
-  .subjectrow.fixed input{
-    font-size:12px;
-    padding:0 7px;
-  }
-  .subjectrow.fixed select{
-    padding:0 5px;
-  }
-  .actions .btn{
-    font-size:11px;
-    padding:10px 12px;
-  }
+ .hero{padding-left:9px;padding-right:9px}
+ .panel{padding:20px 12px}
+ .intro h1{font-size:27px}
+ .subjectrow.fixed{
+  grid-template-columns:minmax(0,1fr) 82px;
+  gap:6px;
+ }
+ .subjectrow.fixed input{
+  font-size:12px;
+  padding:0 7px;
+ }
+ .subjectrow.fixed select{padding:0 5px}
+ .actions .btn{
+  font-size:11px;
+  padding:10px 12px;
+ }
 }
 @media(prefers-reduced-motion:reduce){
-  *,*:before,*:after{
-    animation:none!important;
-    scroll-behavior:auto!important;
-    transition:none!important;
-  }
+ *,*:before,*:after{
+  animation:none!important;
+  scroll-behavior:auto!important;
+  transition:none!important;
+ }
 }
 
-/* =====================================
-   PERUBAHAN YANG DIMINTA:
-   LANGKAH 2 TANPA STATISTIK & CARIAN
-   ===================================== */
-
-#step2 .summary{
-  display:none!important;
-}
-
-#step2 .searchwrap{
-  display:none!important;
-}
-
+/* LANGKAH 2 TANPA STATISTIK DAN CARIAN */
+#step2 .summary{display:none!important}
+#step2 .searchwrap{display:none!important}
 </style>
 </head>
 
@@ -818,1314 +727,1014 @@ h2{
 <main class="hero">
 <div class="container">
 
-<!-- BAHAGIAN UTAMA -->
 <div class="intro">
-  <div class="eyebrow">Semakan Program Pengajian</div>
+ <div class="eyebrow">Semakan Program Pengajian</div>
+ <h1>
+  Ketahui Program Pengajian Yang Sesuai
+  Dengan Keputusan SPM Anda
+ </h1>
+ <p>
+  Semak keputusan SPM anda dengan mudah dan terokai
+  pilihan program Asasi atau Diploma berdasarkan
+  kelayakan akademik anda. Pilih program yang diminati
+  dan hubungi penasihat pendidikan kami untuk mendapatkan
+  maklumat lanjut.
+ </p>
+ <div class="benefits">
+  <div class="benefit">
+   <span class="tick">✓</span> Semakan Percuma
+  </div>
+  <div class="benefit">
+   <span class="tick">✓</span> Tiada Sebarang Komitmen
+  </div>
+  <div class="benefit">
+   <span class="tick">✓</span> Mudah, Cepat &amp; Ringkas
+  </div>
+ </div>
+ <div class="footerline">
+  Semak Kelayakan · Terokai Program · Dapatkan Konsultasi
+ </div>
+</div>
 
-  <h1>
-    Ketahui Program Pengajian Yang Sesuai
-    Dengan Keputusan SPM Anda
-  </h1>
+<div class="panel">
+ <div class="progress"><div id="progressFill"></div></div>
+ <div class="stepmeta">
+  <span class="kicker" id="stepLabel">
+   Langkah 1 daripada 3
+  </span>
+  <span class="percent" id="percent">33%</span>
+ </div>
 
-  <p>
-    Semak keputusan SPM anda dengan mudah dan terokai
-    pilihan program Asasi atau Diploma berdasarkan
-    kelayakan akademik anda. Pilih program yang diminati
-    dan hubungi penasihat pendidikan kami untuk mendapatkan
-    maklumat lanjut.
+ <!-- LANGKAH 1 -->
+ <section class="section active" id="step1">
+  <h2>Masukkan Keputusan SPM Anda</h2>
+  <p class="desc">
+   Pilih gred bagi setiap subjek yang anda ambil.
+   Maklumat ini digunakan untuk membuat semakan awal
+   program pengajian.
   </p>
 
-  <div class="benefits">
-    <div class="benefit">
-      <span class="tick">✓</span>
-      Semakan Percuma
-    </div>
-    <div class="benefit">
-      <span class="tick">✓</span>
-      Tiada Sebarang Komitmen
-    </div>
-    <div class="benefit">
-      <span class="tick">✓</span>
-      Mudah, Cepat &amp; Ringkas
-    </div>
+  <div class="fieldtitle">Subjek utama</div>
+  <div id="mandatorySubjects"></div>
+
+  <div class="fieldtitle">Subjek tambahan</div>
+  <div id="additionalSubjects"></div>
+
+  <button class="add" id="addSubjectButton" type="button">
+   + Tambah Subjek SPM
+  </button>
+
+  <div class="completion" role="status" aria-live="polite">
+   <span id="completionText">0 daripada 4 subjek lengkap</span>
+   <div class="completion-track">
+    <div class="completion-fill" id="completionFill"></div>
+   </div>
   </div>
 
-  <div class="footerline">
-    Semak Kelayakan · Terokai Program · Dapatkan Konsultasi
-  </div>
-</div>
-
-<!-- BORANG 3 LANGKAH -->
-<div class="panel">
-
-  <div class="progress">
-    <div id="progressFill"></div>
+  <div class="note">
+   Kepujian SPM dikira berdasarkan gred A+, A, A-,
+   B+, B, C+ dan C. Sila masukkan semua subjek
+   yang diambil untuk mendapatkan jumlah kepujian
+   yang tepat.
   </div>
 
-  <div class="stepmeta">
-    <span class="kicker" id="stepLabel">
-      Langkah 1 daripada 3
+  <div class="actions">
+   <span></span>
+   <button class="btn btn-primary"
+    id="calculateButton" type="button">
+    Semak Program →
+   </button>
+  </div>
+ </section>
+
+ <!-- LANGKAH 2 -->
+ <section class="section" id="step2">
+  <h2 id="resultTitle">
+   Tahniah! Ini pilihan program anda.
+  </h2>
+  <p class="desc" id="resultDescription">
+   Berdasarkan keputusan yang dimasukkan,
+   berikut ialah pilihan program untuk anda.
+  </p>
+
+  <div class="summary">
+   <div class="stat">
+    <strong id="creditTotal">0</strong>
+    <span>Kepujian SPM</span>
+   </div>
+   <div class="stat">
+    <strong id="programTotal">0</strong>
+    <span>Program untuk disemak</span>
+   </div>
+  </div>
+
+  <div class="resultbanner" id="eligibilityBanner"></div>
+
+  <div id="programArea">
+   <div class="filter">
+    <button class="on" data-filter="Semua"
+     type="button">Semua</button>
+    <button data-filter="Asasi"
+     type="button">Asasi</button>
+    <button data-filter="Diploma"
+     type="button">Diploma</button>
+   </div>
+
+   <div class="searchwrap">
+    <span class="searchicon">⌕</span>
+    <input class="textinput" id="search"
+     type="search"
+     placeholder="Cari program yang diminati...">
+   </div>
+
+   <div class="programlist" id="programList"></div>
+
+   <div class="selectionbar">
+    <span id="selectedCount">
+     0 daripada 3 program dipilih
     </span>
-    <span class="percent" id="percent">33%</span>
+    <span id="visibleCount"></span>
+   </div>
   </div>
 
-  <!-- LANGKAH 1 -->
-  <section class="section active" id="step1">
-    <h2>Masukkan Keputusan SPM Anda</h2>
+  <div class="actions">
+   <button class="btn btn-back"
+    id="backToOne" type="button">
+    ← Kembali
+   </button>
+   <button class="btn btn-primary"
+    id="continueToThree" type="button">
+    Seterusnya →
+   </button>
+  </div>
+ </section>
 
-    <p class="desc">
-      Pilih gred bagi setiap subjek yang anda ambil.
-      Maklumat ini digunakan untuk membuat semakan awal
-      program pengajian.
-    </p>
+ <!-- LANGKAH 3 -->
+ <section class="section" id="step3">
+  <h2>Hubungi Penasihat Pendidikan</h2>
+  <p class="desc">
+   Semakan awal anda telah selesai.
+   Teruskan ke WhatsApp untuk mendapatkan
+   penerangan tentang program, syarat khusus
+   dan proses permohonan.
+  </p>
 
-    <div class="fieldtitle">Subjek utama</div>
-    <div id="mandatorySubjects"></div>
+  <div class="resultbanner">
+   ✓ Maklumat keputusan SPM dan program pilihan
+   anda telah disediakan dalam mesej WhatsApp.
+  </div>
 
-    <div class="fieldtitle">Subjek tambahan</div>
-    <div id="additionalSubjects"></div>
+  <div class="review">
+   <div class="reviewtitle">
+    Ringkasan mesej WhatsApp
+   </div>
+   <div class="reviewcontent" id="messagePreview"></div>
+  </div>
 
-    <button
-      class="add"
-      id="addSubjectButton"
-      type="button">
-      + Tambah Subjek SPM
-    </button>
+  <div class="privacy">
+   Mesej hanya dihantar selepas anda memilih
+   untuk membukanya di WhatsApp dan menekan hantar.
+   Laman ini tidak mempunyai pangkalan data
+   untuk menyimpan keputusan SPM.
+  </div>
 
-    <div
-      class="completion"
-      role="status"
-      aria-live="polite">
-      <span id="completionText">
-        0 daripada 4 subjek lengkap
-      </span>
-      <div class="completion-track">
-        <div
-          class="completion-fill"
-          id="completionFill">
-        </div>
-      </div>
-    </div>
+  <div class="actions">
+   <button class="btn btn-back"
+    id="backToTwo" type="button">
+    ← Kembali
+   </button>
+  </div>
 
-    <div class="note">
-      Kepujian SPM dikira berdasarkan gred A+, A, A-,
-      B+, B, C+ dan C. Sila masukkan semua subjek
-      yang diambil untuk mendapatkan jumlah kepujian
-      yang tepat.
-    </div>
-
-    <div class="actions">
-      <span></span>
-      <button
-        class="btn btn-primary"
-        id="calculateButton"
-        type="button">
-        Semak Program →
-      </button>
-    </div>
-  </section>
-
-  <!-- LANGKAH 2 -->
-  <section class="section" id="step2">
-
-    <h2 id="resultTitle">
-      Tahniah! Ini pilihan program anda.
-    </h2>
-
-    <p class="desc" id="resultDescription">
-      Berdasarkan keputusan yang dimasukkan,
-      berikut ialah pilihan program untuk semakan lanjut.
-    </p>
-
-    <!-- DISEMBUNYIKAN MELALUI CSS -->
-    <div class="summary">
-      <div class="stat">
-        <strong id="creditTotal">0</strong>
-        <span>Kepujian SPM</span>
-      </div>
-      <div class="stat">
-        <strong id="programTotal">0</strong>
-        <span>Program untuk disemak</span>
-      </div>
-    </div>
-
-    <div
-      class="resultbanner"
-      id="eligibilityBanner">
-    </div>
-
-    <div id="programArea">
-      <div class="filter">
-        <button
-          class="on"
-          data-filter="Semua"
-          type="button">
-          Semua
-        </button>
-
-        <button
-          data-filter="Asasi"
-          type="button">
-          Asasi
-        </button>
-
-        <button
-          data-filter="Diploma"
-          type="button">
-          Diploma
-        </button>
-      </div>
-
-      <!-- DISEMBUNYIKAN MELALUI CSS -->
-      <div class="searchwrap">
-        <span class="searchicon">⌕</span>
-        <input
-          class="textinput"
-          id="search"
-          type="search"
-          placeholder="Cari program yang diminati...">
-      </div>
-
-      <div
-        class="programlist"
-        id="programList">
-      </div>
-
-      <div class="selectionbar">
-        <span id="selectedCount">
-          0 daripada 3 program dipilih
-        </span>
-        <span id="visibleCount"></span>
-      </div>
-    </div>
-
-    <div class="actions">
-      <button
-        class="btn btn-back"
-        id="backToOne"
-        type="button">
-        ← Kembali
-      </button>
-
-      <button
-        class="btn btn-primary"
-        id="continueToThree"
-        type="button">
-        Seterusnya →
-      </button>
-    </div>
-  </section>
-
-  <!-- LANGKAH 3 -->
-  <section class="section" id="step3">
-    <h2>Hubungi Penasihat Pendidikan</h2>
-
-    <p class="desc">
-      Semakan awal anda telah selesai. Teruskan
-      ke WhatsApp untuk mendapatkan penerangan
-      tentang program, syarat khusus dan
-      proses permohonan.
-    </p>
-
-    <div class="resultbanner">
-      ✓ Maklumat keputusan SPM dan program pilihan
-      anda telah disediakan dalam mesej WhatsApp.
-    </div>
-
-    <div class="review">
-      <div class="reviewtitle">
-        Ringkasan mesej WhatsApp
-      </div>
-      <div
-        class="reviewcontent"
-        id="messagePreview">
-      </div>
-    </div>
-
-    <div class="privacy">
-      Mesej hanya dihantar selepas anda memilih untuk
-      membukanya di WhatsApp dan menekan hantar.
-      Laman ini tidak mempunyai pangkalan data
-      untuk menyimpan keputusan SPM.
-    </div>
-
-    <div class="actions">
-      <button
-        class="btn btn-back"
-        id="backToTwo"
-        type="button">
-        ← Kembali
-      </button>
-    </div>
-
-    <div style="margin-top:18px">
-      <a
-        class="btn btn-wa"
-        id="waLink"
-        href="#"
-        target="_blank"
-        rel="noopener noreferrer">
-        Teruskan ke WhatsApp
-      </a>
-    </div>
-  </section>
-
+  <div style="margin-top:18px">
+   <a class="btn btn-wa" id="waLink"
+    href="#" target="_blank"
+    rel="noopener noreferrer">
+    Teruskan ke WhatsApp
+   </a>
+  </div>
+ </section>
 </div>
+
 </div>
 </main>
 
 <script>
 "use strict";
 
-/* KONFIGURASI */
 const PHONE = "601121561243";
 
 const GRADES = [
-  "A+","A","A-","B+","B","C+","C","D","E","G","TH"
+ "A+","A","A-","B+","B","C+","C","D","E","G","TH"
 ];
 const CREDITS = [
-  "A+","A","A-","B+","B","C+","C"
+ "A+","A","A-","B+","B","C+","C"
 ];
 const PASS_GRADES = [
-  ...CREDITS,"D","E"
+ ...CREDITS,"D","E"
 ];
 
 const MAIN_SUBJECTS = [
-  "Bahasa Melayu",
-  "Bahasa Inggeris",
-  "Matematik",
-  "Sejarah"
+ "Bahasa Melayu",
+ "Bahasa Inggeris",
+ "Matematik",
+ "Sejarah"
 ];
 
-/* PROGRAM ASASI */
 const ASASI = [
-  "Asasi Perniagaan",
-  "Asasi Pengajian Komputer"
+ "Asasi Perniagaan",
+ "Asasi Pengajian Komputer"
 ];
 
-/* PROGRAM DIPLOMA */
 const DIPLOMA = [
-  "Diploma Pengurusan Perladangan",
-  "Diploma Geomatik",
-  "Diploma Sistem Maklumat Geografi",
-  "Diploma Penerbangan",
-  "Diploma Pengurusan Hotel",
-  "Diploma Pengurusan Pelancongan",
-  "Diploma Pentadbiran Perniagaan",
-  "Diploma Perakaunan",
-  "Diploma Pendidikan Awal Kanak-Kanak",
-  "Diploma Animasi",
-  "Diploma Multimedia Kreatif",
-  "Diploma Teknologi Pemasaran Digital",
-  "Diploma Pengurusan Sekuriti",
-  "Diploma Penyiasatan Jenayah",
-  "Diploma Keselamatan & Kesihatan Pekerjaan",
-  "Diploma Teknologi Penyelenggaraan Pesawat",
-  "Diploma Pengurusan Kru Kabin Penerbangan"
+ "Diploma Pengurusan Perladangan",
+ "Diploma Geomatik",
+ "Diploma Sistem Maklumat Geografi",
+ "Diploma Penerbangan",
+ "Diploma Pengurusan Hotel",
+ "Diploma Pengurusan Pelancongan",
+ "Diploma Pentadbiran Perniagaan",
+ "Diploma Perakaunan",
+ "Diploma Pendidikan Awal Kanak-Kanak",
+ "Diploma Animasi",
+ "Diploma Multimedia Kreatif",
+ "Diploma Teknologi Pemasaran Digital",
+ "Diploma Pengurusan Sekuriti",
+ "Diploma Penyiasatan Jenayah",
+ "Diploma Keselamatan & Kesihatan Pekerjaan",
+ "Diploma Teknologi Penyelenggaraan Pesawat",
+ "Diploma Pengurusan Kru Kabin Penerbangan"
 ];
 
-/* SENARAI SUBJEK TAMBAHAN SPM */
 const SUBJECTS = [
-  "Pendidikan Islam",
-  "Pendidikan Moral",
-  "Sains",
-  "Kesusasteraan Inggeris / Literature in English",
-  "Kesusasteraan Melayu Komunikatif",
-  "Bahasa Arab",
-  "Bahasa Cina",
-  "Bahasa Tamil",
-  "Bahasa Iban",
-  "Bahasa Kadazandusun",
-  "Bahasa Semai",
-  "Kesusasteraan Cina",
-  "Kesusasteraan Tamil",
-  "Bahasa Punjabi",
-  "Geografi",
-  "Pendidikan Seni Visual",
-  "Pendidikan Muzik",
-  "Prinsip Perakaunan",
-  "Perniagaan",
-  "Ekonomi",
-  "Pengajian Keusahawanan",
-  "Matematik Tambahan",
-  "Fizik",
-  "Kimia",
-  "Biologi",
-  "Sains Tambahan",
-  "Sains Komputer",
-  "Sains Rumah Tangga",
-  "Grafik Komunikasi Teknikal",
-  "Lukisan Kejuruteraan",
-  "Pertanian",
-  "Reka Cipta",
-  "Asas Kelestarian",
-  "Sains Sukan",
-  "Pengajian Kejuruteraan Mekanikal",
-  "Pengajian Kejuruteraan Awam",
-  "Pengajian Kejuruteraan Elektrik dan Elektronik",
-  "Tasawwur Islam",
-  "Pendidikan Al-Quran dan Al-Sunnah",
-  "Pendidikan Syariah Islamiah",
-  "Hifz Al-Quran",
-  "Maharat Al-Quran",
-  "Usul Al-Din",
-  "Al-Syariah",
-  "Al-Lughah Al-Arabiah Al-Mu'asirah",
-  "Manahij Al-'Ulum Al-Islamiah",
-  "Al-Adab Wa Al-Balaghah",
-  "Turath Al-Quran dan Al-Sunnah",
-  "Turath Dirasat Islamiah",
-  "Turath Bahasa Arab",
-  "Bible Knowledge",
-  "Pembinaan Domestik",
-  "Membuat Perabot",
-  "Kerja Paip Domestik",
-  "Pendawaian Domestik",
-  "Kimpalan Arka dan Gas",
-  "Menservis Automobil",
-  "Menservis Motosikal",
-  "Menservis Peralatan Penyejukan dan Penyamanan Udara",
-  "Menservis Peralatan Elektrik Domestik",
-  "Rekaan dan Jahitan Pakaian",
-  "Katering dan Penyajian",
-  "Pemprosesan Makanan",
-  "Penjagaan Muka dan Penggayaan Rambut",
-  "Asuhan dan Pendidikan Awal Kanak-Kanak",
-  "Gerontologi Asas dan Geriatrik",
-  "Landskap dan Nurseri",
-  "Akuakultur dan Haiwan Rekreasi",
-  "Tanaman Makanan",
-  "Produksi Reka Tanda",
-  "Hiasan Dalaman",
-  "Produksi Multimedia",
-  "Reka Bentuk Grafik Digital",
-  "Seni Halus",
-  "Reka Bentuk",
-  "Muzik",
-  "Tari",
-  "Teater"
+ "Pendidikan Islam",
+ "Pendidikan Moral",
+ "Sains",
+ "Kesusasteraan Inggeris / Literature in English",
+ "Kesusasteraan Melayu Komunikatif",
+ "Bahasa Arab",
+ "Bahasa Cina",
+ "Bahasa Tamil",
+ "Bahasa Iban",
+ "Bahasa Kadazandusun",
+ "Bahasa Semai",
+ "Kesusasteraan Cina",
+ "Kesusasteraan Tamil",
+ "Bahasa Punjabi",
+ "Geografi",
+ "Pendidikan Seni Visual",
+ "Pendidikan Muzik",
+ "Prinsip Perakaunan",
+ "Perniagaan",
+ "Ekonomi",
+ "Pengajian Keusahawanan",
+ "Matematik Tambahan",
+ "Fizik",
+ "Kimia",
+ "Biologi",
+ "Sains Tambahan",
+ "Sains Komputer",
+ "Sains Rumah Tangga",
+ "Grafik Komunikasi Teknikal",
+ "Lukisan Kejuruteraan",
+ "Pertanian",
+ "Reka Cipta",
+ "Asas Kelestarian",
+ "Sains Sukan",
+ "Pengajian Kejuruteraan Mekanikal",
+ "Pengajian Kejuruteraan Awam",
+ "Pengajian Kejuruteraan Elektrik dan Elektronik",
+ "Tasawwur Islam",
+ "Pendidikan Al-Quran dan Al-Sunnah",
+ "Pendidikan Syariah Islamiah",
+ "Hifz Al-Quran",
+ "Maharat Al-Quran",
+ "Usul Al-Din",
+ "Al-Syariah",
+ "Al-Lughah Al-Arabiah Al-Mu'asirah",
+ "Manahij Al-'Ulum Al-Islamiah",
+ "Al-Adab Wa Al-Balaghah",
+ "Turath Al-Quran dan Al-Sunnah",
+ "Turath Dirasat Islamiah",
+ "Turath Bahasa Arab",
+ "Bible Knowledge",
+ "Pembinaan Domestik",
+ "Membuat Perabot",
+ "Kerja Paip Domestik",
+ "Pendawaian Domestik",
+ "Kimpalan Arka dan Gas",
+ "Menservis Automobil",
+ "Menservis Motosikal",
+ "Menservis Peralatan Penyejukan dan Penyamanan Udara",
+ "Menservis Peralatan Elektrik Domestik",
+ "Rekaan dan Jahitan Pakaian",
+ "Katering dan Penyajian",
+ "Pemprosesan Makanan",
+ "Penjagaan Muka dan Penggayaan Rambut",
+ "Asuhan dan Pendidikan Awal Kanak-Kanak",
+ "Gerontologi Asas dan Geriatrik",
+ "Landskap dan Nurseri",
+ "Akuakultur dan Haiwan Rekreasi",
+ "Tanaman Makanan",
+ "Produksi Reka Tanda",
+ "Hiasan Dalaman",
+ "Produksi Multimedia",
+ "Reka Bentuk Grafik Digital",
+ "Seni Halus",
+ "Reka Bentuk",
+ "Muzik",
+ "Tari",
+ "Teater"
 ];
 
-/* KUMPULAN SUBJEK UNTUK KELAYAKAN */
 const SCIENCE_SUBJECTS = [
-  "Sains",
-  "Sains Tambahan",
-  "Fizik",
-  "Kimia",
-  "Biologi"
+ "Sains","Sains Tambahan","Fizik","Kimia","Biologi"
 ];
-
 const OSH_SCIENCE_SUBJECTS = [
-  "Biologi",
-  "Kimia",
-  "Fizik",
-  "Sains"
+ "Biologi","Kimia","Fizik","Sains"
 ];
 
-/* ELEKTIF STEM - SAINS GUNAAN & TEKNOLOGI */
 const STEM_APPLIED_TECH = [
-  "Grafik Komunikasi Teknikal",
-  "Lukisan Kejuruteraan",
-  "Pengajian Kejuruteraan Awam",
-  "Pengajian Kejuruteraan Mekanikal",
-  "Pengajian Kejuruteraan Elektrik dan Elektronik"
+ "Grafik Komunikasi Teknikal",
+ "Lukisan Kejuruteraan",
+ "Pengajian Kejuruteraan Awam",
+ "Pengajian Kejuruteraan Mekanikal",
+ "Pengajian Kejuruteraan Elektrik dan Elektronik"
 ];
 
-/* SUBJEK VOKASIONAL */
 const VOCATIONAL_SUBJECTS = [
-  "Pembinaan Domestik",
-  "Membuat Perabot",
-  "Kerja Paip Domestik",
-  "Pendawaian Domestik",
-  "Kimpalan Arka dan Gas",
-  "Menservis Automobil",
-  "Menservis Motosikal",
-  "Menservis Peralatan Penyejukan dan Penyamanan Udara",
-  "Menservis Peralatan Elektrik Domestik",
-  "Rekaan dan Jahitan Pakaian",
-  "Katering dan Penyajian",
-  "Pemprosesan Makanan",
-  "Penjagaan Muka dan Penggayaan Rambut",
-  "Asuhan dan Pendidikan Awal Kanak-Kanak",
-  "Gerontologi Asas dan Geriatrik",
-  "Landskap dan Nurseri",
-  "Akuakultur dan Haiwan Rekreasi",
-  "Tanaman Makanan",
-  "Produksi Reka Tanda",
-  "Hiasan Dalaman",
-  "Produksi Multimedia",
-  "Reka Bentuk Grafik Digital"
+ "Pembinaan Domestik",
+ "Membuat Perabot",
+ "Kerja Paip Domestik",
+ "Pendawaian Domestik",
+ "Kimpalan Arka dan Gas",
+ "Menservis Automobil",
+ "Menservis Motosikal",
+ "Menservis Peralatan Penyejukan dan Penyamanan Udara",
+ "Menservis Peralatan Elektrik Domestik",
+ "Rekaan dan Jahitan Pakaian",
+ "Katering dan Penyajian",
+ "Pemprosesan Makanan",
+ "Penjagaan Muka dan Penggayaan Rambut",
+ "Asuhan dan Pendidikan Awal Kanak-Kanak",
+ "Gerontologi Asas dan Geriatrik",
+ "Landskap dan Nurseri",
+ "Akuakultur dan Haiwan Rekreasi",
+ "Tanaman Makanan",
+ "Produksi Reka Tanda",
+ "Hiasan Dalaman",
+ "Produksi Multimedia",
+ "Reka Bentuk Grafik Digital"
 ];
 
 const TECHNICAL_SUBJECTS = [
-  ...STEM_APPLIED_TECH,
-  ...VOCATIONAL_SUBJECTS
+ ...STEM_APPLIED_TECH,
+ ...VOCATIONAL_SUBJECTS
 ];
 
 const state = {
-  grades:[],
-  credits:0,
-  eligible:[],
-  selected:[],
-  filter:"Semua"
+ grades:[],
+ credits:0,
+ eligible:[],
+ selected:[],
+ filter:"Semua"
 };
 
 const $ = id => document.getElementById(id);
 
-/* PILIHAN GRED */
 function gradeOptions(){
-  return '<option value="">Gred</option>' +
-    GRADES.map(g =>
-      `<option value="${g}">${g}</option>`
-    ).join("");
+ return '<option value="">Gred</option>' +
+ GRADES.map(g =>
+  `<option value="${g}">${g}</option>`
+ ).join("");
 }
 
-/* RALAT TERUS PADA MEDAN */
 function showFieldError(el,message){
-  const wrap = el.closest(".fieldwrap");
+ const wrap = el.closest(".fieldwrap");
 
-  el.classList.toggle(
-    "invalid",
-    !!message
-  );
+ el.classList.toggle("invalid",!!message);
+ el.setAttribute(
+  "aria-invalid",
+  message ? "true" : "false"
+ );
 
-  el.setAttribute(
-    "aria-invalid",
-    message ? "true" : "false"
-  );
-
-  if(wrap){
-    const error = wrap.querySelector(".field-error");
-
-    if(error){
-      error.textContent = message || "";
-      error.classList.toggle(
-        "visible",
-        !!message
-      );
-    }
+ if(wrap){
+  const error = wrap.querySelector(".field-error");
+  if(error){
+   error.textContent = message || "";
+   error.classList.toggle("visible",!!message);
   }
+ }
 }
 
-/* KEMAJUAN PENGISIAN */
 function updateCompletion(){
-  let total = MAIN_SUBJECTS.length;
-  let complete = 0;
+ let total = MAIN_SUBJECTS.length;
+ let complete = 0;
 
-  document.querySelectorAll(
-    "#mandatorySubjects .grade"
-  ).forEach(sel => {
-    if(sel.value) complete++;
-  });
+ document.querySelectorAll(
+  "#mandatorySubjects .grade"
+ ).forEach(sel => {
+  if(sel.value) complete++;
+ });
 
-  document.querySelectorAll(
-    "#additionalSubjects .subjectrow"
-  ).forEach(row => {
-    const input = row.querySelector(".subjectname");
-    const grade = row.querySelector(".grade");
-    const chosen = input.dataset.selected || "";
+ document.querySelectorAll(
+  "#additionalSubjects .subjectrow"
+ ).forEach(row => {
+  const input = row.querySelector(".subjectname");
+  const grade = row.querySelector(".grade");
+  const chosen = input.dataset.selected || "";
 
-    if(input.value.trim() || grade.value){
-      total++;
+  if(input.value.trim() || grade.value){
+   total++;
+   if(
+    chosen &&
+    input.value.trim() === chosen &&
+    grade.value
+   ){
+    complete++;
+   }
+  }
+ });
 
-      if(
-        chosen &&
-        input.value.trim() === chosen &&
-        grade.value
-      ){
-        complete++;
-      }
-    }
-  });
+ $("completionText").textContent =
+  `${complete} daripada ${total} subjek lengkap`;
 
-  $("completionText").textContent =
-    `${complete} daripada ${total} subjek lengkap`;
-
-  $("completionFill").style.width =
-    (total ? complete / total * 100 : 0) + "%";
+ $("completionFill").style.width =
+  (total ? complete/total*100 : 0) + "%";
 }
 
-/* EMPAT SUBJEK UTAMA */
+/* EMPAT SUBJEK UTAMA SAHAJA PADA PERMULAAN */
 function setupSubjects(){
-
-  MAIN_SUBJECTS.forEach(name => {
-    const row = document.createElement("div");
-    row.className = "subjectrow fixed";
-
-    const nameWrap = document.createElement("div");
-    nameWrap.className = "fieldwrap";
-
-    const nameInput = document.createElement("input");
-    nameInput.value = name;
-    nameInput.disabled = true;
-
-    nameInput.setAttribute(
-      "aria-label",
-      "Subjek " + name
-    );
-
-    nameWrap.appendChild(nameInput);
-
-    const gradeWrap = document.createElement("div");
-    gradeWrap.className = "fieldwrap";
-
-    const grade = document.createElement("select");
-    grade.className = "grade";
-    grade.innerHTML = gradeOptions();
-
-    grade.setAttribute(
-      "aria-label",
-      "Gred " + name
-    );
-
-    const error = document.createElement("div");
-    error.className = "field-error";
-
-    grade.addEventListener("change",() => {
-      showFieldError(grade,"");
-      updateCompletion();
-    });
-
-    gradeWrap.append(grade,error);
-    row.append(nameWrap,gradeWrap);
-
-    $("mandatorySubjects").appendChild(row);
-  });
-
-  addSubject("Pendidikan Islam");
-  addSubject("Sains");
-
-  updateCompletion();
-}
-
-/* TUTUP MENU CARIAN SUBJEK */
-function closeSubjectMenus(except=null){
-  document.querySelectorAll(
-    ".subject-dropdown.open"
-  ).forEach(menu => {
-    if(menu !== except){
-      menu.classList.remove("open");
-    }
-  });
-}
-
-/* TAMBAH SUBJEK & CARIAN */
-function addSubject(defaultSubject=""){
+ MAIN_SUBJECTS.forEach(name => {
 
   const row = document.createElement("div");
-  row.className = "subjectrow";
+  row.className = "subjectrow fixed";
 
   const nameWrap = document.createElement("div");
-  nameWrap.className = "fieldwrap namewrap";
+  nameWrap.className = "fieldwrap";
 
-  const input = document.createElement("input");
-  input.className = "subjectname";
-  input.type = "search";
-  input.autocomplete = "off";
-  input.placeholder = "Cari atau pilih subjek...";
-
-  input.setAttribute(
-    "aria-label",
-    "Nama subjek tambahan"
-  );
-
-  input.setAttribute("role","combobox");
-  input.setAttribute("aria-autocomplete","list");
-  input.setAttribute("aria-expanded","false");
-
-  const menu = document.createElement("div");
-  menu.className = "subject-dropdown";
-  menu.setAttribute("role","listbox");
-
-  const nameError = document.createElement("div");
-  nameError.className = "field-error";
-
-  nameWrap.append(input,menu,nameError);
+  const nameInput = document.createElement("input");
+  nameInput.value = name;
+  nameInput.disabled = true;
+  nameInput.setAttribute("aria-label","Subjek "+name);
+  nameWrap.appendChild(nameInput);
 
   const gradeWrap = document.createElement("div");
-  gradeWrap.className = "fieldwrap gradewrap";
+  gradeWrap.className = "fieldwrap";
 
   const grade = document.createElement("select");
   grade.className = "grade";
   grade.innerHTML = gradeOptions();
+  grade.setAttribute("aria-label","Gred "+name);
 
-  grade.setAttribute(
-    "aria-label",
-    "Gred subjek tambahan"
-  );
-
-  const gradeError = document.createElement("div");
-  gradeError.className = "field-error";
-
-  gradeWrap.append(grade,gradeError);
-
-  const remove = document.createElement("button");
-  remove.type = "button";
-  remove.className = "remove";
-  remove.textContent = "×";
-
-  remove.setAttribute(
-    "aria-label",
-    "Buang subjek"
-  );
-
-  row.append(nameWrap,gradeWrap,remove);
-
-  $("additionalSubjects").appendChild(row);
-
-  function selectSubject(subject){
-    input.value = subject;
-    input.dataset.selected = subject;
-
-    menu.classList.remove("open");
-
-    input.setAttribute(
-      "aria-expanded",
-      "false"
-    );
-
-    showFieldError(input,"");
-    updateCompletion();
-  }
-
-  function renderSubjectOptions(){
-
-    const q = input.value
-      .trim()
-      .toLocaleLowerCase("ms");
-
-    const options = SUBJECTS.filter(
-      subject =>
-        subject.toLocaleLowerCase("ms").includes(q)
-    );
-
-    menu.replaceChildren();
-
-    if(!options.length){
-      const empty = document.createElement("div");
-      empty.className = "subject-empty";
-      empty.textContent = "Subjek tidak ditemui.";
-
-      menu.appendChild(empty);
-
-    }else{
-      options.forEach(subject => {
-        const btn = document.createElement("button");
-
-        btn.type = "button";
-        btn.className = "subject-option";
-        btn.textContent = subject;
-        btn.setAttribute("role","option");
-
-        btn.addEventListener("pointerdown",e => {
-          e.preventDefault();
-        });
-
-        btn.addEventListener("click",() => {
-          selectSubject(subject);
-        });
-
-        menu.appendChild(btn);
-      });
-    }
-
-    closeSubjectMenus(menu);
-    menu.classList.add("open");
-
-    input.setAttribute(
-      "aria-expanded",
-      "true"
-    );
-  }
-
-  if(defaultSubject){
-    input.value = defaultSubject;
-    input.dataset.selected = defaultSubject;
-  }
-
-  input.addEventListener(
-    "focus",
-    renderSubjectOptions
-  );
-
-  input.addEventListener("input",() => {
-    input.dataset.selected = "";
-    showFieldError(input,"");
-    renderSubjectOptions();
-    updateCompletion();
-  });
-
-  input.addEventListener("keydown",e => {
-
-    if(e.key === "Escape"){
-      menu.classList.remove("open");
-
-      input.setAttribute(
-        "aria-expanded",
-        "false"
-      );
-    }
-
-    if(
-      e.key === "Enter" &&
-      menu.classList.contains("open")
-    ){
-      e.preventDefault();
-
-      const first = menu.querySelector(
-        ".subject-option"
-      );
-
-      if(first) first.click();
-    }
-  });
-
-  input.addEventListener("blur",() => {
-    setTimeout(() => {
-      menu.classList.remove("open");
-
-      input.setAttribute(
-        "aria-expanded",
-        "false"
-      );
-    },150);
-  });
+  const error = document.createElement("div");
+  error.className = "field-error";
 
   grade.addEventListener("change",() => {
-    showFieldError(grade,"");
-    updateCompletion();
+   showFieldError(grade,"");
+   updateCompletion();
   });
 
-  remove.addEventListener("click",() => {
-    row.remove();
-    updateCompletion();
-  });
+  gradeWrap.append(grade,error);
+  row.append(nameWrap,gradeWrap);
+  $("mandatorySubjects").appendChild(row);
+ });
 
+ /* Subjek tambahan tidak dimasukkan automatik. */
+ /* Pelajar menambahnya melalui butang Tambah Subjek SPM. */
+ updateCompletion();
+}
+
+function closeSubjectMenus(except=null){
+ document.querySelectorAll(
+  ".subject-dropdown.open"
+ ).forEach(menu => {
+  if(menu !== except){
+   menu.classList.remove("open");
+  }
+ });
+}
+
+function addSubject(defaultSubject=""){
+ const row = document.createElement("div");
+ row.className = "subjectrow";
+
+ const nameWrap = document.createElement("div");
+ nameWrap.className = "fieldwrap namewrap";
+
+ const input = document.createElement("input");
+ input.className = "subjectname";
+ input.type = "search";
+ input.autocomplete = "off";
+ input.placeholder = "Cari atau pilih subjek...";
+ input.setAttribute(
+  "aria-label","Nama subjek tambahan"
+ );
+ input.setAttribute("role","combobox");
+ input.setAttribute("aria-autocomplete","list");
+ input.setAttribute("aria-expanded","false");
+
+ const menu = document.createElement("div");
+ menu.className = "subject-dropdown";
+ menu.setAttribute("role","listbox");
+
+ const nameError = document.createElement("div");
+ nameError.className = "field-error";
+ nameWrap.append(input,menu,nameError);
+
+ const gradeWrap = document.createElement("div");
+ gradeWrap.className = "fieldwrap gradewrap";
+
+ const grade = document.createElement("select");
+ grade.className = "grade";
+ grade.innerHTML = gradeOptions();
+ grade.setAttribute(
+  "aria-label","Gred subjek tambahan"
+ );
+
+ const gradeError = document.createElement("div");
+ gradeError.className = "field-error";
+ gradeWrap.append(grade,gradeError);
+
+ const remove = document.createElement("button");
+ remove.type = "button";
+ remove.className = "remove";
+ remove.textContent = "×";
+ remove.setAttribute("aria-label","Buang subjek");
+
+ row.append(nameWrap,gradeWrap,remove);
+ $("additionalSubjects").appendChild(row);
+
+ function selectSubject(subject){
+  input.value = subject;
+  input.dataset.selected = subject;
+  menu.classList.remove("open");
+  input.setAttribute("aria-expanded","false");
+  showFieldError(input,"");
   updateCompletion();
+ }
+
+ function renderSubjectOptions(){
+  const q = input.value.trim().toLocaleLowerCase("ms");
+
+  const options = SUBJECTS.filter(
+   subject =>
+    subject.toLocaleLowerCase("ms").includes(q)
+  );
+
+  menu.replaceChildren();
+
+  if(!options.length){
+   const empty = document.createElement("div");
+   empty.className = "subject-empty";
+   empty.textContent = "Subjek tidak ditemui.";
+   menu.appendChild(empty);
+  }else{
+   options.forEach(subject => {
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "subject-option";
+    btn.textContent = subject;
+    btn.setAttribute("role","option");
+
+    btn.addEventListener("pointerdown",e => {
+     e.preventDefault();
+    });
+
+    btn.addEventListener("click",() => {
+     selectSubject(subject);
+    });
+
+    menu.appendChild(btn);
+   });
+  }
+
+  closeSubjectMenus(menu);
+  menu.classList.add("open");
+  input.setAttribute("aria-expanded","true");
+ }
+
+ if(defaultSubject){
+  input.value = defaultSubject;
+  input.dataset.selected = defaultSubject;
+ }
+
+ input.addEventListener("focus",renderSubjectOptions);
+
+ input.addEventListener("input",() => {
+  input.dataset.selected = "";
+  showFieldError(input,"");
+  renderSubjectOptions();
+  updateCompletion();
+ });
+
+ input.addEventListener("keydown",e => {
+  if(e.key === "Escape"){
+   menu.classList.remove("open");
+   input.setAttribute("aria-expanded","false");
+  }
+
+  if(e.key === "Enter" &&
+   menu.classList.contains("open")){
+   e.preventDefault();
+   const first = menu.querySelector(".subject-option");
+   if(first) first.click();
+  }
+ });
+
+ input.addEventListener("blur",() => {
+  setTimeout(() => {
+   menu.classList.remove("open");
+   input.setAttribute("aria-expanded","false");
+  },150);
+ });
+
+ grade.addEventListener("change",() => {
+  showFieldError(grade,"");
+  updateCompletion();
+ });
+
+ remove.addEventListener("click",() => {
+  row.remove();
+  updateCompletion();
+ });
+
+ updateCompletion();
 }
 
 document.addEventListener("pointerdown",e => {
-  if(!e.target.closest(".namewrap")){
-    closeSubjectMenus();
-  }
+ if(!e.target.closest(".namewrap")){
+  closeSubjectMenus();
+ }
 });
 
-/* VALIDASI SUBJEK & GRED */
 function collectGrades(){
+ const rows = [];
+ const seen = new Set();
+ let firstInvalid = null;
 
-  const rows = [];
-  const seen = new Set();
-  let firstInvalid = null;
+ document.querySelectorAll(
+  "#mandatorySubjects .subjectrow"
+ ).forEach(row => {
+  const name = row.querySelector("input").value;
+  const grade = row.querySelector(".grade");
 
-  document.querySelectorAll(
-    "#mandatorySubjects .subjectrow"
-  ).forEach(row => {
-    const name = row.querySelector("input").value;
-    const grade = row.querySelector(".grade");
+  if(!grade.value){
+   showFieldError(grade,"Sila pilih gred.");
+   firstInvalid ||= grade;
+  }else{
+   showFieldError(grade,"");
+   rows.push({name,grade:grade.value});
+   seen.add(name);
+  }
+ });
 
-    if(!grade.value){
-      showFieldError(
-        grade,
-        "Sila pilih gred."
-      );
+ document.querySelectorAll(
+  "#additionalSubjects .subjectrow"
+ ).forEach(row => {
+  const input = row.querySelector(".subjectname");
+  const grade = row.querySelector(".grade");
 
-      firstInvalid ||= grade;
+  const name = input.dataset.selected || "";
+  const typed = input.value.trim();
 
-    }else{
-      showFieldError(grade,"");
-
-      rows.push({
-        name,
-        grade:grade.value
-      });
-
-      seen.add(name);
-    }
-  });
-
-  document.querySelectorAll(
-    "#additionalSubjects .subjectrow"
-  ).forEach(row => {
-
-    const input = row.querySelector(".subjectname");
-    const grade = row.querySelector(".grade");
-
-    const name = input.dataset.selected || "";
-    const typed = input.value.trim();
-
-    if(!typed && !grade.value){
-      showFieldError(input,"");
-      showFieldError(grade,"");
-      return;
-    }
-
-    let nameValid = true;
-
-    if(!name || typed !== name){
-
-      showFieldError(
-        input,
-        "Sila pilih subjek daripada hasil carian."
-      );
-
-      firstInvalid ||= input;
-      nameValid = false;
-
-    }else if(seen.has(name)){
-
-      showFieldError(
-        input,
-        "Subjek ini telah dipilih. Pilih subjek lain."
-      );
-
-      firstInvalid ||= input;
-      nameValid = false;
-
-    }else{
-      showFieldError(input,"");
-      seen.add(name);
-    }
-
-    if(!grade.value){
-
-      showFieldError(
-        grade,
-        "Sila pilih gred."
-      );
-
-      firstInvalid ||= grade;
-
-    }else{
-      showFieldError(grade,"");
-    }
-
-    if(nameValid && grade.value){
-      rows.push({
-        name,
-        grade:grade.value
-      });
-    }
-  });
-
-  if(firstInvalid){
-    firstInvalid.focus();
-    return null;
+  if(!typed && !grade.value){
+   showFieldError(input,"");
+   showFieldError(grade,"");
+   return;
   }
 
-  return rows;
+  let nameValid = true;
+
+  if(!name || typed !== name){
+   showFieldError(
+    input,
+    "Sila pilih subjek daripada hasil carian."
+   );
+   firstInvalid ||= input;
+   nameValid = false;
+  }else if(seen.has(name)){
+   showFieldError(
+    input,
+    "Subjek ini telah dipilih. Pilih subjek lain."
+   );
+   firstInvalid ||= input;
+   nameValid = false;
+  }else{
+   showFieldError(input,"");
+   seen.add(name);
+  }
+
+  if(!grade.value){
+   showFieldError(grade,"Sila pilih gred.");
+   firstInvalid ||= grade;
+  }else{
+   showFieldError(grade,"");
+  }
+
+  if(nameValid && grade.value){
+   rows.push({name,grade:grade.value});
+  }
+ });
+
+ if(firstInvalid){
+  firstInvalid.focus();
+  return null;
+ }
+
+ return rows;
 }
 
-/* LOGIK KELAYAKAN */
 function getGrade(grades,name){
-  return grades.find(
-    g => g.name.toLowerCase() ===
-      name.toLowerCase()
-  )?.grade || "";
+ return grades.find(
+  g => g.name.toLowerCase() === name.toLowerCase()
+ )?.grade || "";
 }
 
 function isPass(grades,name){
-  return PASS_GRADES.includes(
-    getGrade(grades,name)
-  );
+ return PASS_GRADES.includes(getGrade(grades,name));
 }
-
 function isCredit(grades,name){
-  return CREDITS.includes(
-    getGrade(grades,name)
-  );
+ return CREDITS.includes(getGrade(grades,name));
 }
-
 function countCredits(grades){
-  return grades.filter(
-    g => CREDITS.includes(g.grade)
-  ).length;
+ return grades.filter(
+  g => CREDITS.includes(g.grade)
+ ).length;
 }
-
 function hasPassedAny(grades,subjects){
-  return subjects.some(
-    subject => isPass(grades,subject)
-  );
+ return subjects.some(
+  subject => isPass(grades,subject)
+ );
 }
-
 function countCreditsFrom(grades,subjects){
-  return subjects.filter(
-    subject => isCredit(grades,subject)
-  ).length;
+ return subjects.filter(
+  subject => isCredit(grades,subject)
+ ).length;
 }
-
 function hasPassedSPM(grades){
-  return (
-    isPass(grades,"Bahasa Melayu") &&
-    isPass(grades,"Sejarah")
-  );
+ return (
+  isPass(grades,"Bahasa Melayu") &&
+  isPass(grades,"Sejarah")
+ );
 }
 
-/* SYARAT KHUSUS PROGRAM */
-function eligibleForProgram(
-  name,
-  type,
-  grades,
-  totalCredits
-){
+/* SYARAT KELAYAKAN PROGRAM DIKEKALKAN */
+function eligibleForProgram(name,type,grades,totalCredits){
+ if(!hasPassedSPM(grades)) return false;
 
-  if(!hasPassedSPM(grades)){
-    return false;
-  }
+ if(type === "Asasi"){
+  return totalCredits >= 5;
+ }
 
-  if(type === "Asasi"){
-    return totalCredits >= 5;
-  }
+ if(totalCredits < 3) return false;
 
-  if(totalCredits < 3){
-    return false;
-  }
-
-  switch(name){
-
-    case "Diploma Geomatik":
-      return (
-        isCredit(grades,"Matematik") &&
-        (
-          hasPassedAny(grades,SCIENCE_SUBJECTS) ||
-          isPass(grades,"Bahasa Inggeris") ||
-          hasPassedAny(grades,TECHNICAL_SUBJECTS)
-        )
-      );
-
-    case "Diploma Sistem Maklumat Geografi":
-      return isCredit(grades,"Matematik");
-
-    case "Diploma Perakaunan":
-      return (
-        isCredit(grades,"Matematik") &&
-        isPass(grades,"Bahasa Inggeris")
-      );
-
-    case "Diploma Keselamatan & Kesihatan Pekerjaan":
-      return (
-        isPass(grades,"Bahasa Inggeris") &&
-        isCredit(grades,"Matematik") &&
-        countCreditsFrom(
-          grades,
-          OSH_SCIENCE_SUBJECTS
-        ) >= 2
-      );
-
-    case "Diploma Teknologi Penyelenggaraan Pesawat":
-      return (
-        isPass(grades,"Matematik") &&
-        hasPassedAny(grades,SCIENCE_SUBJECTS)
-      );
-
-    default:
-      return true;
-  }
-}
-
-/* LANGKAH 1 KE LANGKAH 2 */
-function calculate(){
-
-  const grades = collectGrades();
-
-  if(!grades){
-    return;
-  }
-
-  state.grades = grades;
-  state.credits = countCredits(grades);
-  state.selected = [];
-  state.filter = "Semua";
-
-  const spmPassed = hasPassedSPM(grades);
-
-  const allPrograms = [
-    ...ASASI.map(name => ({
-      name,
-      type:"Asasi"
-    })),
-
-    ...DIPLOMA.map(name => ({
-      name,
-      type:"Diploma"
-    }))
-  ];
-
-  state.eligible = allPrograms.filter(
-    program => eligibleForProgram(
-      program.name,
-      program.type,
-      grades,
-      state.credits
-    )
-  );
-
-  $("creditTotal").textContent =
-    state.credits;
-
-  $("programTotal").textContent =
-    state.eligible.length;
-
-  $("search").value = "";
-
-  document.querySelectorAll(
-    "[data-filter]"
-  ).forEach(btn => {
-    btn.classList.toggle(
-      "on",
-      btn.dataset.filter === "Semua"
-    );
-  });
-
-  let title = "";
-  let description = "";
-  let message = "";
-
-  if(!spmPassed){
-
-    title =
-      "Semakan Kelayakan SPM Anda";
-
-    description =
-      "Syarat asas kemasukan memerlukan " +
-      "lulus Bahasa Melayu dan Sejarah.";
-
-    message =
-      "Keputusan anda belum memenuhi syarat " +
-      "asas lulus SPM kerana Bahasa Melayu " +
-      "atau Sejarah belum lulus. Anda masih " +
-      "boleh mendapatkan konsultasi.";
-
-  }else if(state.eligible.length > 0){
-
-    title =
-      "Tahniah! Ini pilihan program anda.";
-
-    description =
-      "Berdasarkan keputusan SPM anda, berikut " +
-      "ialah program yang memenuhi syarat " +
-      "akademik yang telah ditetapkan untuk " +
-      "semakan awal.";
-
-    message =
-      "Anda telah lulus Bahasa Melayu dan " +
-      "Sejarah serta memenuhi syarat akademik " +
-      "awal bagi program yang dipaparkan.";
-
-  }else{
-
-    title =
-      "Mari bincang pilihan pengajian anda.";
-
-    description =
-      "Keputusan anda belum memenuhi syarat " +
-      "program yang disenaraikan. Anda masih " +
-      "boleh mendapatkan konsultasi lanjut.";
-
-    message =
-      "Tiada program Asasi atau Diploma dalam " +
-      "senarai ini yang memenuhi syarat " +
-      "berdasarkan keputusan yang dimasukkan.";
-  }
-
-  $("resultTitle").textContent = title;
-
-  $("resultDescription").textContent =
-    description;
-
-  $("eligibilityBanner").textContent =
-    message;
-
-  $("eligibilityBanner").classList.toggle(
-    "warning",
-    !spmPassed || state.eligible.length === 0
-  );
-
-  $("programArea").classList.toggle(
-    "hidden",
-    state.eligible.length === 0
-  );
-
-  renderPrograms();
-  goStep(2);
-}
-
-/* PENAPIS PROGRAM */
-function filterPrograms(type){
-
-  state.filter = type;
-
-  document.querySelectorAll(
-    "[data-filter]"
-  ).forEach(btn => {
-    btn.classList.toggle(
-      "on",
-      btn.dataset.filter === type
-    );
-  });
-
-  renderPrograms();
-}
-
-/* PAPARKAN PROGRAM */
-function renderPrograms(){
-
-  const q = $("search")
-    .value
-    .toLowerCase()
-    .trim();
-
-  const list = $("programList");
-
-  const filtered = state.eligible.filter(p =>
+ switch(name){
+  case "Diploma Geomatik":
+   return (
+    isCredit(grades,"Matematik") &&
     (
-      state.filter === "Semua" ||
-      p.type === state.filter
-    ) &&
-    p.name.toLowerCase().includes(q)
+     hasPassedAny(grades,SCIENCE_SUBJECTS) ||
+     isPass(grades,"Bahasa Inggeris") ||
+     hasPassedAny(grades,TECHNICAL_SUBJECTS)
+    )
+   );
+
+  case "Diploma Sistem Maklumat Geografi":
+   return isCredit(grades,"Matematik");
+
+  case "Diploma Perakaunan":
+   return (
+    isCredit(grades,"Matematik") &&
+    isPass(grades,"Bahasa Inggeris")
+   );
+
+  case "Diploma Keselamatan & Kesihatan Pekerjaan":
+   return (
+    isPass(grades,"Bahasa Inggeris") &&
+    isCredit(grades,"Matematik") &&
+    countCreditsFrom(
+     grades,OSH_SCIENCE_SUBJECTS
+    ) >= 2
+   );
+
+  case "Diploma Teknologi Penyelenggaraan Pesawat":
+   return (
+    isPass(grades,"Matematik") &&
+    hasPassedAny(grades,SCIENCE_SUBJECTS)
+   );
+
+  default:
+   return true;
+ }
+}
+
+function calculate(){
+ const grades = collectGrades();
+ if(!grades) return;
+
+ state.grades = grades;
+ state.credits = countCredits(grades);
+ state.selected = [];
+ state.filter = "Semua";
+
+ const spmPassed = hasPassedSPM(grades);
+
+ const allPrograms = [
+  ...ASASI.map(name => ({name,type:"Asasi"})),
+  ...DIPLOMA.map(name => ({name,type:"Diploma"}))
+ ];
+
+ state.eligible = allPrograms.filter(
+  program => eligibleForProgram(
+   program.name,program.type,grades,state.credits
+  )
+ );
+
+ $("creditTotal").textContent = state.credits;
+ $("programTotal").textContent = state.eligible.length;
+ $("search").value = "";
+
+ document.querySelectorAll("[data-filter]").forEach(btn => {
+  btn.classList.toggle(
+   "on",btn.dataset.filter === "Semua"
   );
+ });
 
-  $("selectedCount").textContent =
-    `${state.selected.length} daripada 3 program dipilih`;
+ let title = "";
+ let description = "";
+ let message = "";
 
-  $("visibleCount").textContent =
-    `${filtered.length} dipaparkan`;
+ if(!spmPassed){
+  title = "Semakan Kelayakan SPM Anda";
+  description =
+   "Syarat asas kemasukan memerlukan " +
+   "lulus Bahasa Melayu dan Sejarah.";
+  message =
+   "Keputusan anda belum memenuhi syarat " +
+   "asas lulus SPM kerana Bahasa Melayu " +
+   "atau Sejarah belum lulus. Anda masih " +
+   "boleh mendapatkan konsultasi.";
+ }else if(state.eligible.length > 0){
+  title = "Tahniah! Ini pilihan program anda.";
+  description =
+   "Berdasarkan keputusan SPM anda, berikut " +
+   "ialah program yang memenuhi syarat " +
+   "akademik yang telah ditetapkan untuk " +
+   "semakan awal.";
+  message =
+   "Anda telah lulus Bahasa Melayu dan " +
+   "Sejarah serta memenuhi syarat akademik " +
+   "awal bagi program yang dipaparkan.";
+ }else{
+  title = "Mari bincang pilihan pengajian anda.";
+  description =
+   "Keputusan anda belum memenuhi syarat " +
+   "program yang disenaraikan. Anda masih " +
+   "boleh mendapatkan konsultasi lanjut.";
+  message =
+   "Tiada program Asasi atau Diploma dalam " +
+   "senarai ini yang memenuhi syarat " +
+   "berdasarkan keputusan yang dimasukkan.";
+ }
 
-  list.replaceChildren();
+ $("resultTitle").textContent = title;
+ $("resultDescription").textContent = description;
+ $("eligibilityBanner").textContent = message;
 
-  if(!filtered.length){
+ $("eligibilityBanner").classList.toggle(
+  "warning",
+  !spmPassed || state.eligible.length === 0
+ );
 
-    const div = document.createElement("div");
-    div.className = "note";
+ $("programArea").classList.toggle(
+  "hidden",state.eligible.length === 0
+ );
 
-    div.textContent =
-      "Tiada program ditemui untuk carian ini.";
+ renderPrograms();
+ goStep(2);
+}
 
-    list.appendChild(div);
+function filterPrograms(type){
+ state.filter = type;
+ document.querySelectorAll("[data-filter]").forEach(btn => {
+  btn.classList.toggle(
+   "on",btn.dataset.filter === type
+  );
+ });
+ renderPrograms();
+}
 
-    return;
-  }
+function renderPrograms(){
+ const q = $("search").value.toLowerCase().trim();
+ const list = $("programList");
 
-  filtered.forEach(p => {
+ const filtered = state.eligible.filter(p =>
+  (
+   state.filter === "Semua" ||
+   p.type === state.filter
+  ) &&
+  p.name.toLowerCase().includes(q)
+ );
 
-    const selected =
-      state.selected.includes(p.name);
+ $("selectedCount").textContent =
+  `${state.selected.length} daripada 3 program dipilih`;
+ $("visibleCount").textContent =
+  `${filtered.length} dipaparkan`;
 
-    const card = document.createElement("div");
+ list.replaceChildren();
 
-    card.className =
-      "program" +
-      (selected ? " selected" : "");
+ if(!filtered.length){
+  const div = document.createElement("div");
+  div.className = "note";
+  div.textContent =
+   "Tiada program ditemui untuk carian ini.";
+  list.appendChild(div);
+  return;
+ }
 
-    card.tabIndex = 0;
+ filtered.forEach(p => {
+  const selected = state.selected.includes(p.name);
 
-    card.setAttribute(
-      "role",
-      "checkbox"
-    );
+  const card = document.createElement("div");
+  card.className =
+   "program" + (selected ? " selected" : "");
+  card.tabIndex = 0;
+  card.setAttribute("role","checkbox");
+  card.setAttribute("aria-checked",String(selected));
 
-    card.setAttribute(
-      "aria-checked",
-      String(selected)
-    );
+  const mark = document.createElement("span");
+  mark.className = "circle";
+  mark.innerHTML =
+   '<svg width="13" height="13" viewBox="0 0 24 24" ' +
+   'fill="none" stroke="currentColor" stroke-width="3">' +
+   '<path d="M5 12l4 4L19 6"/></svg>';
 
-    const mark = document.createElement("span");
-    mark.className = "circle";
+  const body = document.createElement("span");
+  body.className = "programbody";
 
-    mark.innerHTML =
-      '<svg width="13" height="13" viewBox="0 0 24 24" ' +
-      'fill="none" stroke="currentColor" stroke-width="3">' +
-      '<path d="M5 12l4 4L19 6"/></svg>';
+  const strong = document.createElement("strong");
+  strong.textContent = p.name;
 
-    const body = document.createElement("span");
-    body.className = "programbody";
+  const small = document.createElement("small");
+  small.textContent =
+   p.type + " · Tertakluk kepada syarat khusus";
 
-    const strong = document.createElement("strong");
-    strong.textContent = p.name;
+  body.append(strong,small);
+  card.append(mark,body);
 
-    const small = document.createElement("small");
+  const action = () => toggleProgram(p.name);
 
-    small.textContent =
-      p.type +
-      " · Tertakluk kepada syarat khusus";
-
-    body.append(strong,small);
-    card.append(mark,body);
-
-    const action = () =>
-      toggleProgram(p.name);
-
-    card.addEventListener(
-      "click",
-      action
-    );
-
-    card.addEventListener(
-      "keydown",
-      e => {
-        if(
-          e.key === "Enter" ||
-          e.key === " "
-        ){
-          e.preventDefault();
-          action();
-        }
-      }
-    );
-
-    list.appendChild(card);
+  card.addEventListener("click",action);
+  card.addEventListener("keydown",e => {
+   if(e.key === "Enter" || e.key === " "){
+    e.preventDefault();
+    action();
+   }
   });
+
+  list.appendChild(card);
+ });
 }
 
-/* MAKSIMUM TIGA PROGRAM */
 function toggleProgram(name){
-
-  if(state.selected.includes(name)){
-
-    state.selected =
-      state.selected.filter(
-        x => x !== name
-      );
-
-  }else{
-
-    if(state.selected.length >= 3){
-      alert(
-        "Maksimum 3 program sahaja boleh dipilih."
-      );
-      return;
-    }
-
-    state.selected.push(name);
+ if(state.selected.includes(name)){
+  state.selected = state.selected.filter(
+   x => x !== name
+  );
+ }else{
+  if(state.selected.length >= 3){
+   alert("Maksimum 3 program sahaja boleh dipilih.");
+   return;
   }
+  state.selected.push(name);
+ }
 
-  renderPrograms();
+ renderPrograms();
 }
 
-/* WHATSAPP */
 function prepareWhatsApp(){
+ if(
+  state.eligible.length > 0 &&
+  state.selected.length === 0
+ ){
+  alert(
+   "Sila pilih sekurang-kurangnya satu program."
+  );
+  return;
+ }
 
-  if(
-    state.eligible.length > 0 &&
-    state.selected.length === 0
-  ){
-    alert(
-      "Sila pilih sekurang-kurangnya satu program."
-    );
-    return;
-  }
+ const subjects = state.grades.map(
+  g => `- ${g.name}: ${g.grade}`
+ ).join("\n");
 
-  const subjects = state.grades.map(
-    g => `- ${g.name}: ${g.grade}`
-  ).join("\n");
+ const programs = state.selected.length
+  ? state.selected.map(
+   (p,i) => `${i+1}. ${p}`
+  ).join("\n")
+  : "Mohon cadangan program lain yang sesuai.";
 
-  const programs = state.selected.length
-    ? state.selected.map(
-        (p,i) => `${i+1}. ${p}`
-      ).join("\n")
-    : "Mohon cadangan program lain yang sesuai.";
-
-  const message =
-`Hello, saya ingin mendapatkan maklumat lanjut tentang pengajian saya.
+ const message =
+`Hello, saya ingin dapatkan maklumat lanjut tentang pengajian saya.
 
 KEPUTUSAN SPM
 ${subjects}
@@ -2135,86 +1744,58 @@ Jumlah kepujian: ${state.credits}
 PROGRAM PILIHAN
 ${programs}
 
-Saya ingin mendapatkan maklumat lanjut tentang syarat kemasukan, yuran pengajian dan proses permohonan.
+Saya ingin dapatkan maklumat lanjut tentang syarat kemasukan, yuran pengajian dan proses permohonan.
 
 Terima kasih.`;
 
-  $("messagePreview").textContent =
-    message;
+ $("messagePreview").textContent = message;
+ $("waLink").href =
+  `https://wa.me/${PHONE}?text=${encodeURIComponent(message)}`;
 
-  $("waLink").href =
-    `https://wa.me/${PHONE}?text=${encodeURIComponent(message)}`;
-
-  goStep(3);
+ goStep(3);
 }
 
 /* PERTUKARAN LANGKAH TANPA AUTO-SCROLL */
 function goStep(step){
+ document.querySelectorAll(".section").forEach((el,i) => {
+  el.classList.toggle("active",i === step-1);
+ });
 
-  document.querySelectorAll(
-    ".section"
-  ).forEach((el,i) => {
-    el.classList.toggle(
-      "active",
-      i === step - 1
-    );
-  });
-
-  $("stepLabel").textContent =
-    `Langkah ${step} daripada 3`;
-
-  $("percent").textContent =
-    Math.round(step / 3 * 100) + "%";
-
-  $("progressFill").style.width =
-    (step / 3 * 100) + "%";
+ $("stepLabel").textContent =
+  `Langkah ${step} daripada 3`;
+ $("percent").textContent =
+  Math.round(step/3*100) + "%";
+ $("progressFill").style.width =
+  (step/3*100) + "%";
 }
 
 /* SAMBUNGKAN BUTANG */
 $("addSubjectButton").addEventListener(
-  "click",
-  () => addSubject()
+ "click",() => addSubject()
 );
-
 $("calculateButton").addEventListener(
-  "click",
-  calculate
+ "click",calculate
 );
-
 $("backToOne").addEventListener(
-  "click",
-  () => goStep(1)
+ "click",() => goStep(1)
 );
-
 $("backToTwo").addEventListener(
-  "click",
-  () => goStep(2)
+ "click",() => goStep(2)
 );
-
 $("continueToThree").addEventListener(
-  "click",
-  prepareWhatsApp
+ "click",prepareWhatsApp
 );
-
 $("search").addEventListener(
-  "input",
-  renderPrograms
+ "input",renderPrograms
 );
-
-document.querySelectorAll(
-  "[data-filter]"
-).forEach(btn => {
-  btn.addEventListener(
-    "click",
-    () => filterPrograms(
-      btn.dataset.filter
-    )
-  );
+document.querySelectorAll("[data-filter]").forEach(btn => {
+ btn.addEventListener(
+  "click",() => filterPrograms(btn.dataset.filter)
+ );
 });
 
 /* MULAKAN BORANG */
 setupSubjects();
-
 </script>
 </body>
 </html>
