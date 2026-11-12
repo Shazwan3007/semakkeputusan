@@ -720,6 +720,106 @@ h2{
 /* LANGKAH 2 TANPA STATISTIK DAN CARIAN */
 #step2 .summary{display:none!important}
 #step2 .searchwrap{display:none!important}
+
+/* ================================================================
+   BAHAGIAN TAMBAHAN — terasing daripada borang SPM asal
+   ================================================================ */
+.info-main{background:#f5f8fb;color:#172a3e;padding:76px 20px 92px}
+.info-wrap{width:min(1140px,100%);margin:0 auto}
+.info-top{text-align:center;max-width:740px;margin:0 auto 40px}
+.info-tag{display:inline-block;font-size:11px;font-weight:800;letter-spacing:1.7px;text-transform:uppercase;color:#087e63;margin-bottom:12px}
+.info-top h2{font-size:clamp(26px,3.8vw,42px);line-height:1.23;letter-spacing:-1.4px;margin:0 0 12px}
+.info-top p{color:#617487;line-height:1.85;font-size:15px}
+.info-nav{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:0 auto 39px;max-width:1000px}
+.info-nav a{background:#fff;border:1px solid #dce5ec;border-radius:100px;padding:12px 17px;text-decoration:none;color:#26415b;font-size:12px;font-weight:700;transition:background .2s,transform .2s}
+.info-nav a:hover{background:#e4f3f1;transform:translateY(-2px)}
+.info-block{background:#fff;border:1px solid #e2eaf0;box-shadow:0 12px 45px rgba(15,41,65,.05);border-radius:26px;padding:clamp(22px,4vw,42px);margin-bottom:26px;scroll-margin-top:20px}
+.info-head{display:flex;gap:20px;justify-content:space-between;align-items:flex-start;margin-bottom:26px}
+.info-head>div{max-width:760px}
+.info-number{display:block;color:#176384;letter-spacing:1.3px;text-transform:uppercase;font-size:11px;font-weight:800;margin-bottom:10px}
+.info-head h2{font-size:clamp(23px,3vw,31px);line-height:1.3;letter-spacing:-.9px;margin:0 0 9px}
+.info-head p{font-size:14px;line-height:1.8;color:#617487;margin:0}
+.info-count{flex-shrink:0;background:#e7f5f0;color:#087e63;border:1px solid #bfe9d8;font-weight:800;padding:9px 13px;border-radius:30px;font-size:12px}
+.info-label{display:block;color:#29455d;font-size:13px;font-weight:700;margin:0 0 9px}
+.info-select{display:block;width:100%;max-width:760px;height:54px;border:1px solid #d5e1e9;border-radius:12px;background:#fff;color:#172a3e;font-size:14px;font-weight:600;padding:0 42px 0 16px;outline-offset:3px}
+.info-select:focus{border-color:#176384}
+.info-profile{margin-top:24px;background:#f3f8fb;border:1px solid #e6edf3;border-radius:18px;padding:24px;min-width:0}
+.info-profile h3{font-size:clamp(18px,2.3vw,24px);line-height:1.35;margin:0 0 18px;letter-spacing:-.5px}
+.info-meta{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.info-meta-item{background:#fff;border:1px solid #e4ebf0;border-radius:14px;padding:17px;min-width:0}
+.info-mini{font-size:11px;font-weight:700;color:#617487;display:block;margin-bottom:8px}
+.info-meta-item strong{font-size:16px;word-break:break-word}
+.info-linkcopy{border:0;background:#e7f5f0;color:#087e63;padding:6px 10px;border-radius:8px;font-size:11px;font-weight:800;margin-left:8px;cursor:pointer}
+.info-data-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:27px 0 20px}
+.info-subtitle{display:flex;align-items:center;gap:9px;font-weight:800;font-size:15px;margin:0 0 12px;color:#213b50}
+.info-subtitle:before{content:"";height:17px;width:4px;border-radius:5px;background:#087e63}
+.info-paragraph{font-size:14px;color:#53697d;line-height:1.85;margin:0}
+.info-skills{display:flex;flex-wrap:wrap;gap:8px}
+.info-skills span{display:inline-flex;background:#edf4f9;border:1px solid #e3ebf1;color:#36546b;padding:9px 12px;font-size:12px;font-weight:600;border-radius:9px}
+.info-jobs{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:10px 16px}
+.info-jobs li{position:relative;padding-left:23px;font-size:13px;line-height:1.6;color:#3e5367}
+.info-jobs li:before{content:'✓';position:absolute;left:0;top:0;color:#087e63;font-weight:900}
+.info-smallnote{color:#62778a;font-size:12px;line-height:1.75;margin:15px 0 0}
+.info-smallnote.italic{font-style:italic}
+.info-cta{display:flex;justify-content:center;align-items:center;gap:9px;text-align:center;background:#087e63;color:white;text-decoration:none;border:0;border-radius:12px;font-size:14px;font-weight:800;min-height:52px;padding:13px 18px;margin-top:24px;width:100%;transition:background .2s,transform .2s}
+.info-cta:hover{background:#06664f;transform:translateY(-1px)}
+.info-wa-icon{width:22px;height:22px;display:inline-flex;justify-content:center;align-items:center;border-radius:50%;background:#ffffff22;font-size:17px}
+.info-fee-profile{margin-top:22px;background:#f3f8fb;border:1px solid #e6edf3;border-radius:18px;padding:22px}
+.info-fee-profile h3{font-size:19px;margin:0 0 17px;line-height:1.4}
+.info-fee-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:15px}
+.info-fee-box{background:#fff;border:1px solid #e3ebf1;border-radius:13px;padding:19px;min-width:0}
+.info-fee-box span{font-size:12px;color:#617487;display:block;margin-bottom:8px}
+.info-fee-box strong{font-size:clamp(21px,3.4vw,30px);line-height:1.2;letter-spacing:-.8px;word-break:break-word}
+.info-duration{font-size:13px;font-weight:700;color:#496176;margin:0}
+.info-details{border:1px solid #e1e9ef;border-radius:13px;margin-top:12px;overflow:hidden}
+.info-details summary{list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:center;cursor:pointer;padding:19px 20px;font-size:14px;font-weight:800;user-select:none}
+.info-details summary::-webkit-details-marker{display:none}
+.info-details summary:after{content:'+';font-size:20px;color:#176384;font-weight:600}
+.info-details[open] summary:after{content:'−'}
+.info-details-body{border-top:1px solid #e9eff3;padding:20px}
+.info-fee-row{display:flex;justify-content:space-between;gap:20px;padding:11px 0;border-bottom:1px solid #edf1f4;font-size:13px;line-height:1.6;color:#43596e}
+.info-fee-row:last-child{border-bottom:0}
+.info-fee-row strong{flex-shrink:0;color:#1c354b}
+.info-aid-list{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.info-aid{border:1px solid #e5edf3;border-radius:12px;padding:14px;display:flex;gap:11px;align-items:flex-start;min-width:0}
+.info-aid-code{display:inline-flex;flex-shrink:0;align-items:center;justify-content:center;min-width:63px;min-height:39px;text-align:center;padding:7px 8px;background:#edf5f8;border-radius:8px;color:#1b5671;font-size:11px;font-weight:800}
+.info-aid strong{display:block;font-size:12px;line-height:1.5}
+.info-aid small{display:block;color:#697e90;font-size:11px;margin-top:5px}
+.info-support{list-style:none;padding:0;margin:0;display:grid;gap:13px}
+.info-support li{position:relative;padding-left:24px;color:#3d5368;font-size:13px;line-height:1.7}
+.info-support li:before{content:'✓';position:absolute;left:0;color:#087e63;font-weight:800}
+.info-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:25px 0}
+.info-step{border:1px solid #e2eaf0;border-radius:16px;padding:20px;min-width:0}
+.info-step-num{display:grid;place-items:center;width:35px;height:35px;border-radius:50%;background:#e5f3ef;color:#087e63;font-weight:800;font-size:14px;margin-bottom:13px}
+.info-step h3{font-size:15px;line-height:1.4;margin:0 0 8px}
+.info-step p{margin:0;font-size:12px;color:#617487;line-height:1.75}
+.info-intake{display:flex;gap:17px;align-items:center;background:#f3f8fb;border:1px solid #e3edf2;border-radius:18px;padding:22px}
+.info-calendar{width:56px;height:56px;flex-shrink:0;display:grid;place-items:center;border-radius:14px;background:#fff;color:#176384;font-size:25px}
+.info-intake small{color:#617487;font-size:12px;display:block;margin-bottom:4px}
+.info-intake strong{display:block;font-family:Manrope,Inter,sans-serif;font-size:24px;line-height:1.35}
+.info-intake p{margin:4px 0 0;font-size:12px;line-height:1.65;color:#617487}
+.info-wa-callout{margin:18px 0 0;padding:19px 20px;background:#f2f8f6;border-radius:13px;border:1px solid #d9eae2}
+.info-wa-callout strong{display:block;font-size:14px;margin-bottom:6px;color:#1b4c3c}
+.info-wa-callout p{margin:0;font-size:13px;color:#537168;line-height:1.75}
+.info-footer{margin:25px auto 0;max-width:1140px;text-align:center;color:#7a8c9c;font-size:12px;line-height:1.8}
+@media(max-width:850px){.info-data-grid{grid-template-columns:1fr;gap:22px}.info-steps{grid-template-columns:1fr 1fr}.info-aid-list{grid-template-columns:1fr}}
+@media(max-width:600px){.info-main{padding:49px 12px 62px}.info-top{margin-bottom:25px}.info-nav{gap:8px;margin-bottom:26px}.info-nav a{font-size:11px;padding:10px 12px}.info-block{border-radius:20px;padding:20px 15px;margin-bottom:15px}.info-head{display:block;margin-bottom:20px}.info-head h2{font-size:23px}.info-head p{font-size:13px}.info-count{display:inline-block;margin-top:13px}.info-meta{grid-template-columns:1fr}.info-profile{padding:17px}.info-jobs{grid-template-columns:1fr;gap:9px}.info-fee-profile{padding:15px}.info-fee-grid{gap:9px}.info-fee-box{padding:13px 11px}.info-fee-box span{font-size:10px;line-height:1.5}.info-fee-box strong{font-size:clamp(19px,5.4vw,27px)}.info-details summary{padding:17px 15px}.info-details-body{padding:14px}.info-aid-list{grid-template-columns:1fr}.info-steps{grid-template-columns:1fr}.info-step{display:grid;grid-template-columns:36px 1fr;column-gap:13px;align-items:start;padding:16px}.info-step-num{grid-row:span 2;margin:0}.info-step h3{margin:0 0 5px}.info-intake{padding:16px;gap:12px}.info-calendar{width:45px;height:45px;font-size:22px}.info-intake strong{font-size:20px}.info-cta{font-size:13px}}
+@media(max-width:350px){.info-main{padding-left:8px;padding-right:8px}.info-block{padding:18px 12px}.info-fee-box strong{font-size:19px}.info-fee-row{gap:8px;flex-wrap:wrap}.info-intake strong{font-size:18px}}
+
+
+/* Penambahbaikan kepercayaan — elemen tambahan, borang SPM asal tidak diubah */
+.trust-panel{background:linear-gradient(125deg,#102f49,#193f58);color:#fff;border-radius:24px;padding:clamp(22px,4vw,38px);margin-bottom:26px;box-shadow:0 16px 40px rgba(16,47,73,.12)}
+.trust-panel .info-number{color:#a8e5d5}.trust-panel h2{font-size:clamp(23px,3vw,30px);letter-spacing:-.7px;line-height:1.35;margin:0 0 12px}.trust-panel p{color:#d0e1ec;font-size:14px;line-height:1.85;margin:0}.trust-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:23px 0}
+.trust-card{border-radius:15px;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.075);padding:17px;min-width:0}.trust-card strong{display:block;font-size:20px;line-height:1.5}.trust-card span{display:block;font-size:12px;line-height:1.6;color:#d7e6ed}
+.trust-links{display:flex;flex-wrap:wrap;gap:11px;margin:22px 0 8px}.trust-links a,.mqa-official-link{display:inline-flex;gap:8px;align-items:center;justify-content:center;border:1px solid #98d1c7;padding:11px 16px;border-radius:11px;color:#fff;text-decoration:none;font-size:13px;font-weight:800;transition:background .2s}
+.trust-links a:hover{background:rgba(255,255,255,.15)}.trust-disclaimer{display:block;color:#b7ccda;font-size:11px;line-height:1.75;margin-top:13px}
+.mqa-official-link{color:#087e63;border:1px solid #bfe5d8;background:#e9f7f1;margin-top:13px;width:max-content;max-width:100%}.mqa-official-link:hover{background:#d9f1e8}
+.mqa-help{margin-top:9px;font-size:11px;line-height:1.7;color:#62778a}
+.faq-section .info-head{margin-bottom:12px}.faq-section .info-details{margin-top:11px}.faq-section .info-details summary{line-height:1.6}.faq-section .info-details-body{color:#4d6275;font-size:13px;line-height:1.9}.faq-section .info-details-body p{margin:0}
+.faq-bottom{margin-top:23px;background:#edf7f4;border-radius:15px;padding:18px;border:1px solid #d8ebe4}.faq-bottom strong{font-size:14px;color:#173f32}.faq-bottom p{color:#536d62;font-size:13px;line-height:1.7;margin:8px 0 0}
+@media(max-width:700px){.trust-cards{grid-template-columns:1fr}.trust-links a{width:100%}.trust-panel{border-radius:19px}.trust-card{padding:14px}.mqa-official-link{width:100%}}
+@media(max-width:360px){.trust-panel{padding:17px}.trust-links a{padding:12px}}
+
 </style>
 </head>
 
@@ -917,6 +1017,137 @@ h2{
 
 </div>
 </main>
+
+<!-- MAKLUMAT PROGRAM & PENDAFTARAN: borang asal di atas dikekalkan -->
+<div class="info-main" id="maklumat-pengajian">
+ <div class="info-wrap">
+  <header class="info-top">
+   <span class="info-tag">PANDUAN PENGAJIAN · NORTH BORNEO UNIVERSITY COLLEGE</span>
+   <h2>Rancang Langkah Seterusnya Selepas SPM</h2>
+   <p>Terokai program pengajian, bidang kerjaya, yuran pendidikan dan bantuan kewangan, kemudian dapatkan panduan permohonan melalui WhatsApp.</p>
+  </header>
+  <nav class="info-nav" aria-label="Navigasi maklumat pengajian">
+   <a href="#step1" data-to-hero="true">Semakan SPM</a>
+   <a href="#info-program">Program & Kerjaya</a>
+   <a href="#info-yuran">Yuran & Bantuan</a>
+   <a href="#info-mohon">Kemasukan</a>
+   <a href="#info-faq">Soalan Lazim</a>
+  </nav>
+  <section class="trust-panel" id="info-kepercayaan" aria-labelledby="trust-title">
+   <span class="info-number">MAKLUMAT &amp; RUJUKAN PENGAJIAN</span>
+   <h2 id="trust-title">Rancang Masa Depan Pendidikan Dengan Lebih Yakin</h2>
+   <p>Terokai pilihan pengajian di North Borneo University College (NBUC), semak maklumat melalui sumber rasmi dan dapatkan panduan daripada penasihat pendidikan melalui WhatsApp.</p>
+   <div class="trust-cards">
+    <div class="trust-card"><strong>19 Program</strong><span>Pilihan Asasi dan Diploma yang dipaparkan dalam panduan ini.</span></div>
+    <div class="trust-card"><strong>Rujukan MQA</strong><span>Nombor rujukan disediakan untuk memudahkan semakan di portal MQA.</span></div>
+    <div class="trust-card"><strong>WhatsApp</strong><span>Tanya terus tentang program, yuran, bantuan kewangan dan kemasukan.</span></div>
+   </div>
+   <div class="trust-links">
+    <a href="https://nbuc.edu.my/" target="_blank" rel="noopener noreferrer" aria-label="Lihat laman web rasmi North Borneo University College">Laman Rasmi NBUC ↗</a>
+    <a href="https://www2.mqa.gov.my/mqr/carianakr.cfm" target="_blank" rel="noopener noreferrer" aria-label="Buka portal carian rasmi MQA">Portal Semakan MQA ↗</a>
+    <a href="https://wa.me/601121561243?text=Hello%2C%20saya%20ingin%20dapatkan%20maklumat%20lanjut%20tentang%20pengajian%20di%20NBUC." target="_blank" rel="noopener noreferrer">Hubungi Penasihat ↗</a>
+   </div>
+   <small class="trust-disclaimer">Laman panduan ini memudahkan semakan dan pertanyaan. Sahkan maklumat program, status akreditasi dan syarat kemasukan terkini melalui sumber rasmi berkaitan.</small>
+  </section>
+  <section class="info-block" id="info-program" aria-labelledby="info-program-title">
+   <div class="info-head">
+    <div><span class="info-number">02 / PANDUAN PENGAJIAN</span><h2 id="info-program-title">Program Pengajian &amp; Peluang Kerjaya</h2><p>Ketahui tempoh pengajian, nombor rujukan MQA, bidang pembelajaran, kemahiran serta peluang pekerjaan bagi program pilihan anda.</p></div>
+    <span class="info-count">19 Program</span>
+   </div>
+   <label class="info-label" for="info-program-select">Pilih program pengajian</label>
+   <select id="info-program-select" class="info-select"></select>
+   <div class="info-profile" aria-live="polite">
+    <h3 id="info-program-name">Diploma Geomatik</h3>
+    <div class="info-meta">
+     <div class="info-meta-item"><span class="info-mini">Tempoh pengajian</span><strong id="info-program-duration"></strong></div>
+     <div class="info-meta-item"><span class="info-mini">Nombor Rujukan MQA</span><strong id="info-program-mqa"></strong><button class="info-linkcopy" type="button" id="info-copy-mqa" aria-label="Salin nombor rujukan MQA">Salin</button><div><a class="mqa-official-link" id="info-mqa-check" target="_blank" rel="noopener noreferrer" href="https://www2.mqa.gov.my/mqr/carianakr.cfm">Semak di Portal MQA ↗</a><p class="mqa-help">Salin nombor rujukan di atas dan cari pada ruangan “No. Rujukan” dalam portal MQA. Bagi akreditasi sementara, semak melalui portal PASP.</p></div></div>
+    </div>
+   </div>
+   <div class="info-data-grid">
+    <div><h3 class="info-subtitle">Bidang Pembelajaran</h3><p class="info-paragraph" id="info-program-field"></p></div>
+    <div><h3 class="info-subtitle">Kemahiran Berkaitan</h3><div class="info-skills" id="info-program-skills"></div></div>
+   </div>
+   <div><h3 class="info-subtitle" id="info-career-title">Peluang Pekerjaan</h3><div id="info-career-content"></div></div>
+   <a href="#" id="info-program-wa" class="info-cta" target="_blank" rel="noopener noreferrer"><span class="info-wa-icon" aria-hidden="true">✆</span> Tanya Tentang Program Ini</a>
+  </section>
+  <section class="info-block" id="info-yuran" aria-labelledby="info-yuran-title">
+   <div class="info-head"><div><span class="info-number">03 / MAKLUMAT YURAN</span><h2 id="info-yuran-title">Yuran, Tempoh Pengajian &amp; Bantuan Kewangan</h2><p>Maklumat yuran pengajian 2026 bagi pelajar warganegara Malaysia dan pilihan bantuan pendidikan untuk disemak.</p></div><span class="info-count">2026</span></div>
+   <label class="info-label" for="info-fee-select">Pilih program pengajian</label>
+   <select id="info-fee-select" class="info-select"></select>
+   <div class="info-fee-profile" aria-live="polite">
+    <h3 id="info-fee-name"></h3>
+    <div class="info-fee-grid">
+     <div class="info-fee-box"><span>Jumlah yuran pengajian</span><strong id="info-total-fee"></strong></div>
+     <div class="info-fee-box"><span>Yuran setiap semester</span><strong id="info-semester-fee"></strong></div>
+    </div>
+    <p class="info-duration" id="info-fee-duration"></p>
+   </div>
+   <details class="info-details">
+    <summary>Yuran Pendaftaran &amp; Hostel</summary>
+    <div class="info-details-body">
+     <div class="info-fee-row"><span>Yuran pendaftaran (sekali bayar)</span><strong>RM300</strong></div>
+     <div class="info-fee-row"><span>Deposit hostel</span><strong>RM150</strong></div>
+     <div class="info-fee-row"><span>Hostel bulanan selepas tempoh percuma</span><strong>RM170</strong></div>
+     <div class="info-fee-row"><span>Peperiksaan akhir setiap semester</span><strong>RM50</strong></div>
+     <p class="info-smallnote">Yuran pendaftaran tidak boleh dipulangkan. Deposit hostel boleh dipulangkan tertakluk kepada terma dan syarat.</p>
+    </div>
+   </details>
+   <details class="info-details" open>
+    <summary>Biasiswa &amp; Bantuan Kewangan</summary>
+    <div class="info-details-body">
+     <div class="info-aid-list">
+      <div class="info-aid"><span class="info-aid-code">BUDI</span><div><strong>Bantuan Tunai Pendaftaran IPT</strong><small>Bantuan pendaftaran</small></div></div>
+      <div class="info-aid"><span class="info-aid-code">TPNS</span><div><strong>Tabung Pendidikan Negeri Sabah</strong><small>Bantuan pendidikan</small></div></div>
+      <div class="info-aid"><span class="info-aid-code">BKNS</span><div><strong>Biasiswa Kerajaan Negeri Sabah</strong><small>Biasiswa</small></div></div>
+      <div class="info-aid"><span class="info-aid-code">BAIK</span><div><strong>Bantuan Ihsan Komputer</strong><small>Bantuan peralatan</small></div></div>
+      <div class="info-aid"><span class="info-aid-code">Zakat MUIS</span><div><strong>Majlis Ugama Islam Sabah</strong><small>Bantuan zakat</small></div></div>
+      <div class="info-aid"><span class="info-aid-code">PTPTN</span><div><strong>Perbadanan Tabung Pendidikan Tinggi Nasional</strong><small>Pinjaman pendidikan</small></div></div>
+     </div>
+     <p class="info-smallnote">Setiap skim mempunyai syarat kelayakan, tempoh permohonan dan ketetapan tersendiri. Ketersediaan bantuan perlu disemak dengan agensi berkaitan.</p>
+    </div>
+   </details>
+   <details class="info-details">
+    <summary>Pakej Sokongan Pelajar 2026</summary>
+    <div class="info-details-body">
+     <ul class="info-support" id="info-support-list"></ul>
+     <div id="info-travel-wrap">
+      <h3 class="info-subtitle" style="margin-top:19px">Tuntutan tiket perjalanan semasa pendaftaran</h3>
+      <div class="info-fee-row"><span>Sabah &amp; Labuan (kecuali Pantai Barat)</span><strong>RM100</strong></div>
+      <div class="info-fee-row"><span>Sarawak</span><strong>RM150</strong></div>
+      <div class="info-fee-row"><span>Semenanjung Malaysia</span><strong>RM200</strong></div>
+     </div>
+     <p class="info-smallnote">Manfaat tertakluk kepada syarat institusi.</p>
+    </div>
+   </details>
+   <a href="#" id="info-fee-wa" class="info-cta" target="_blank" rel="noopener noreferrer"><span class="info-wa-icon" aria-hidden="true">✆</span> Tanya Yuran &amp; Bantuan Kewangan</a>
+   <p class="info-smallnote">Maklumat yuran berdasarkan dokumen NBUC 2026. Jumlah yuran pengajian tidak termasuk yuran lain yang dinyatakan secara berasingan.</p>
+  </section>
+  <section class="info-block" id="info-mohon" aria-labelledby="info-mohon-title">
+   <div class="info-head"><div><span class="info-number">04 / PENGAMBILAN PELAJAR</span><h2 id="info-mohon-title">Kemasukan &amp; Permohonan</h2><p>Mulakan langkah pertama ke pengajian Asasi atau Diploma pilihan anda. Proses pertanyaan dan permohonan boleh dimulakan terus melalui WhatsApp.</p></div><span class="info-count">Disember / Januari</span></div>
+   <div class="info-intake"><div class="info-calendar" aria-hidden="true">▦</div><div><small>Sesi pengambilan</small><strong>Disember / Januari</strong><p>Tarikh pendaftaran tepat boleh disemak melalui penasihat pendidikan.</p></div></div>
+   <h3 class="info-subtitle" style="margin-top:27px">Cara Memohon</h3>
+   <div class="info-steps">
+    <div class="info-step"><span class="info-step-num">1</span><h3>Semak Kelayakan SPM</h3><p>Masukkan keputusan SPM anda untuk melihat program yang sesuai.</p></div>
+    <div class="info-step"><span class="info-step-num">2</span><h3>Pilih Program Pengajian</h3><p>Pilih program Asasi atau Diploma berdasarkan kelayakan dan minat anda.</p></div>
+    <div class="info-step"><span class="info-step-num">3</span><h3>Mohon Melalui WhatsApp</h3><p>Hubungi penasihat pendidikan untuk mendapatkan bantuan proses permohonan.</p></div>
+   </div>
+   <div class="info-wa-callout"><strong>Permohonan Melalui WhatsApp</strong><p>Tidak perlu mengisi borang permohonan tambahan di website. Hubungi penasihat pendidikan untuk memulakan proses permohonan.</p></div>
+   <a id="info-apply-wa" class="info-cta" href="#" target="_blank" rel="noopener noreferrer"><span class="info-wa-icon" aria-hidden="true">✆</span> Mohon Sekarang Melalui WhatsApp</a>
+  </section>
+  <section class="info-block faq-section" id="info-faq" aria-labelledby="info-faq-title">
+   <div class="info-head"><div><span class="info-number">05 / PANDUAN PANTAS</span><h2 id="info-faq-title">Soalan Lazim (FAQ)</h2><p>Jawapan ringkas tentang semakan SPM, pilihan program, yuran dan proses permohonan.</p></div><span class="info-count">6 Soalan</span></div>
+   <details class="info-details"><summary>Bagaimanakah cara menyemak kelayakan menggunakan keputusan SPM?</summary><div class="info-details-body"><p>Masukkan gred Bahasa Melayu, Bahasa Inggeris, Matematik dan Sejarah. Tambah subjek SPM lain yang anda ambil, kemudian tekan butang “Semak Program”. Keputusan yang dipaparkan ialah semakan kelayakan awal.</p></div></details>
+   <details class="info-details"><summary>Adakah saya boleh memilih lebih daripada satu program?</summary><div class="info-details-body"><p>Ya. Dalam langkah pemilihan program, anda boleh memilih sehingga tiga program yang diminati sebelum menghubungi penasihat pendidikan melalui WhatsApp.</p></div></details>
+   <details class="info-details"><summary>Di manakah saya boleh menyemak nombor rujukan MQA?</summary><div class="info-details-body"><p>Pilih program dalam bahagian “Program Pengajian &amp; Peluang Kerjaya”, salin nombor MQA dan gunakan pautan “Semak di Portal MQA”. Sesetengah program berstatus akreditasi sementara dan boleh disemak melalui <a href="https://www2.mqa.gov.my/pasp" target="_blank" rel="noopener noreferrer">portal PASP</a>.</p></div></details>
+   <details class="info-details"><summary>Adakah yuran yang dipaparkan termasuk semua bayaran?</summary><div class="info-details-body"><p>Tidak semestinya. Jumlah yuran pengajian dipaparkan secara berasingan daripada yuran pendaftaran, deposit hostel dan yuran peperiksaan. Semak pecahan serta bayaran terkini dengan penasihat pendidikan.</p></div></details>
+   <details class="info-details"><summary>Apakah bantuan kewangan yang boleh saya semak?</summary><div class="info-details-body"><p>Anda boleh mendapatkan maklumat lanjut mengenai BUDI, TPNS, BKNS, BAIK, Zakat MUIS dan PTPTN. Setiap skim mempunyai kriteria, tempoh permohonan dan kelayakan yang berbeza.</p></div></details>
+   <details class="info-details"><summary>Bilakah kemasukan dan bagaimana cara memohon?</summary><div class="info-details-body"><p>Sesi pengambilan yang dimaklumkan ialah Disember / Januari. Tarikh tepat perlu disahkan dengan penasihat pendidikan. Anda boleh memulakan pertanyaan dan proses permohonan terus melalui butang WhatsApp.</p></div></details>
+   <div class="faq-bottom"><strong>Masih mempunyai pertanyaan?</strong><p>Hubungi penasihat pendidikan untuk mendapatkan penerangan tentang program, kemasukan dan bantuan kewangan.</p><a class="info-cta" href="https://wa.me/601121561243?text=Hello%2C%20saya%20ingin%20bertanya%20tentang%20program%20pengajian%20dan%20permohonan%20NBUC." target="_blank" rel="noopener noreferrer">✆ Tanya Penasihat Melalui WhatsApp</a></div>
+  </section>
+  <footer class="info-footer">Semak kelayakan · Terokai program · Dapatkan konsultasi</footer>
+ </div>
+</div>
+
 
 <script>
 "use strict";
@@ -1797,5 +2028,78 @@ document.querySelectorAll("[data-filter]").forEach(btn => {
 /* MULAKAN BORANG */
 setupSubjects();
 </script>
+
+<script>
+/* Maklumat tambahan: berasingan daripada logik semakan SPM sedia ada. */
+(function(){
+ 'use strict';
+ const PROGRAM_INFO = [{"name":"Asasi Perniagaan","mqa":"MQA/A7601","duration":"1 tahun","tuition":5000,"semester":2500,"field":"Asas pengurusan, ekonomi, pemasaran dan perniagaan.","skills":["Pemikiran analitikal","Komunikasi perniagaan","Asas pengurusan"],"jobs":[],"pathway":"Laluan ke Ijazah Sarjana Muda berkaitan perniagaan dan pengurusan, tertakluk kepada syarat kemasukan."},{"name":"Asasi Pengajian Komputer","mqa":"MQA/A7600","duration":"1 tahun","tuition":5000,"semester":2500,"field":"Asas pengkomputeran, pengaturcaraan, matematik dan teknologi maklumat.","skills":["Asas pengaturcaraan","Pemikiran logik","Penyelesaian masalah"],"jobs":[],"pathway":"Laluan ke Ijazah Sarjana Muda dalam bidang komputer atau teknologi maklumat, tertakluk kepada syarat kemasukan."},{"name":"Diploma Pengurusan Perladangan","mqa":"MQA/FA13814","duration":"2 tahun 6 bulan","tuition":21360,"semester":4272,"field":"Operasi ladang, pengurusan tanaman dan pengeluaran perladangan.","skills":["Pengurusan operasi ladang","Pemantauan tanaman","Penyeliaan kerja"],"jobs":["Pembantu pengurus ladang","Penyelia operasi ladang","Pembantu pegawai pertanian","Pembantu operasi perladangan"],"pathway":""},{"name":"Diploma Geomatik","mqa":"MQA/FA536","duration":"3 tahun","tuition":24000,"semester":4000,"field":"Pengukuran tanah, pemetaan dan penggunaan peralatan ukur.","skills":["Pengukuran lapangan","Penyediaan peta","Pengendalian data ukur"],"jobs":["Pembantu juruukur tanah","Juruteknik geomatik","Pembantu pemetaan","Juruteknik ukur tapak"],"pathway":""},{"name":"Diploma Sistem Maklumat Geografi","mqa":"MQA/FA8567","duration":"3 tahun","tuition":24000,"semester":4000,"field":"Pemetaan digital, data geospatial dan analisis GIS.","skills":["Pemetaan GIS","Pengurusan data geospatial","Analisis lokasi"],"jobs":["Juruteknik GIS","Pembantu penganalisis GIS","Pembantu pemetaan digital","Pembantu pengurusan data geospatial"],"pathway":""},{"name":"Diploma Penerbangan","mqa":"MQA/PA15857","duration":"2 tahun 6 bulan","tuition":21360,"semester":4272,"field":"Operasi industri penerbangan, pengurusan lapangan terbang dan perkhidmatan penerbangan.","skills":["Koordinasi operasi","Komunikasi pelanggan","Pengurusan operasi penerbangan"],"jobs":["Pembantu operasi lapangan terbang","Petugas perkhidmatan darat","Pembantu operasi syarikat penerbangan","Pegawai perkhidmatan pelanggan penerbangan"],"pathway":""},{"name":"Diploma Pengurusan Hotel","mqa":"MQA/FA12215","duration":"2 tahun 6 bulan","tuition":21360,"semester":4272,"field":"Pengurusan hotel, perkhidmatan tetamu dan operasi hospitaliti.","skills":["Khidmat pelanggan","Operasi kaunter hadapan","Pengurusan hospitaliti"],"jobs":["Penyambut tetamu hotel","Pembantu penyelia hotel","Pegawai perkhidmatan tetamu","Penyelaras operasi hospitaliti"],"pathway":""},{"name":"Diploma Pengurusan Pelancongan","mqa":"MQA/A7568","duration":"2 tahun","tuition":16000,"semester":4000,"field":"Pengurusan pelancongan, pakej perjalanan dan operasi agensi pelancongan.","skills":["Perancangan perjalanan","Pengurusan tempahan","Komunikasi pelanggan"],"jobs":["Perunding pelancongan junior","Pegawai tempahan perjalanan","Penyelaras pakej pelancongan","Pembantu operasi agensi pelancongan"],"pathway":""},{"name":"Diploma Pentadbiran Perniagaan","mqa":"MQA/FA3507","duration":"2 tahun 6 bulan","tuition":21360,"semester":4272,"field":"Pentadbiran organisasi, operasi perniagaan dan pemasaran.","skills":["Pentadbiran pejabat","Penyediaan laporan","Koordinasi operasi"],"jobs":["Pembantu pentadbiran","Eksekutif pentadbiran junior","Pembantu operasi perniagaan","Pegawai khidmat pelanggan"],"pathway":""},{"name":"Diploma Perakaunan","mqa":"MQA/FA3506","duration":"3 tahun","tuition":24000,"semester":4000,"field":"Prinsip perakaunan, pengurusan rekod kewangan dan asas percukaian.","skills":["Penyimpanan rekod kewangan","Penyediaan akaun","Perisian perakaunan"],"jobs":["Pembantu akaun","Kerani kewangan","Pembantu audit","Pembantu pentadbiran kewangan"],"pathway":""},{"name":"Diploma Pendidikan Awal Kanak-Kanak","mqa":"MQA/FA12178","duration":"2 tahun 3 bulan","tuition":18720,"semester":4680,"field":"Perkembangan kanak-kanak, pendidikan prasekolah dan aktiviti pembelajaran.","skills":["Perancangan aktiviti kanak-kanak","Pengurusan bilik darjah","Pemerhatian perkembangan"],"jobs":["Pendidik awal kanak-kanak","Pembantu guru prasekolah","Pengasuh di pusat berdaftar","Pembantu pengurusan tadika"],"pathway":""},{"name":"Diploma Animasi","mqa":"MQA/FA13118","duration":"2 tahun 6 bulan","tuition":21360,"semester":4272,"field":"Reka bentuk watak, penceritaan visual dan animasi digital.","skills":["Animasi 2D/3D","Reka bentuk watak","Penyuntingan visual"],"jobs":["Animator junior","Pembantu artis storyboard","Pereka grafik junior","Pembantu produksi animasi"],"pathway":""},{"name":"Diploma Multimedia Kreatif","mqa":"MQA/FA12969","duration":"2 tahun 6 bulan","tuition":21360,"semester":4272,"field":"Reka bentuk grafik, video, audio dan kandungan multimedia.","skills":["Reka bentuk digital","Penyuntingan video","Produksi kandungan"],"jobs":["Pereka grafik junior","Penyunting video junior","Pereka kandungan multimedia","Pembantu produksi kreatif"],"pathway":""},{"name":"Diploma Teknologi Pemasaran Digital","mqa":"MQA/PA14259","duration":"2 tahun 6 bulan","tuition":21360,"semester":4272,"field":"Pemasaran media sosial, pengiklanan digital dan analitik.","skills":["Pengurusan media sosial","Penciptaan kandungan","Analitik pemasaran"],"jobs":["Pembantu pemasaran digital","Eksekutif media sosial junior","Pencipta kandungan","Pembantu pengiklanan digital"],"pathway":""},{"name":"Diploma Pengurusan Sekuriti","mqa":"MQA/FA8683","duration":"2 tahun 6 bulan","tuition":21360,"semester":4272,"field":"Pengurusan keselamatan, penilaian risiko dan operasi perlindungan aset.","skills":["Penilaian risiko","Penyediaan laporan insiden","Koordinasi keselamatan"],"jobs":["Penyelia keselamatan junior","Pembantu operasi keselamatan","Pembantu keselamatan korporat","Penyelaras keselamatan tapak"],"pathway":""},{"name":"Diploma Penyiasatan Jenayah","mqa":"MQA/FA12442","duration":"2 tahun 6 bulan","tuition":21360,"semester":4272,"field":"Asas penyiasatan, dokumentasi kes dan pengendalian maklumat.","skills":["Penulisan laporan","Pengurusan maklumat kes","Pemerhatian dan analisis"],"jobs":["Pembantu penyiasatan swasta (tertakluk syarat)","Pembantu pematuhan","Pembantu pengurusan kes","Pembantu operasi keselamatan"],"pathway":""},{"name":"Diploma Keselamatan & Kesihatan Pekerjaan","mqa":"MQA/FA8635","duration":"3 tahun 6 bulan","tuition":38250,"semester":5465,"field":"Keselamatan tempat kerja, pengenalpastian bahaya dan pengurusan risiko pekerjaan.","skills":["Pemeriksaan keselamatan","Penilaian risiko","Dokumentasi insiden"],"jobs":["Pembantu keselamatan dan kesihatan pekerjaan","Juruteknik keselamatan","Pembantu penyelaras HSE","Pembantu audit keselamatan"],"pathway":""},{"name":"Diploma Teknologi Penyelenggaraan Pesawat","mqa":"MQA/FA12582","duration":"2 tahun 6 bulan","tuition":21360,"semester":4272,"field":"Asas sistem pesawat, komponen mekanikal dan amalan penyelenggaraan penerbangan.","skills":["Pemeriksaan teknikal asas","Sistem pesawat","Dokumentasi penyelenggaraan"],"jobs":["Pembantu teknikal penyelenggaraan pesawat","Juruteknik pelatih pesawat","Pembantu sokongan kejuruteraan penerbangan","Pembantu dokumentasi penyelenggaraan"],"pathway":""},{"name":"Diploma Pengurusan Kru Kabin Penerbangan","mqa":"MQA/FA12443","duration":"2 tahun 6 bulan","tuition":21360,"semester":4272,"field":"Perkhidmatan penumpang, operasi kabin dan asas keselamatan penerbangan.","skills":["Komunikasi pelanggan","Perkhidmatan kabin","Etika hospitaliti"],"jobs":["Calon kru kabin","Pegawai khidmat pelanggan penerbangan","Petugas perkhidmatan penumpang","Pembantu operasi hospitaliti"],"pathway":""}];
+ const get=id=>document.getElementById(id);
+ const rm=n=>'RM '+n.toLocaleString('en-MY');
+ const wa=text=>'https://wa.me/601121561243?text='+encodeURIComponent(text);
+ const selectA=get('info-program-select');
+ const selectB=get('info-fee-select');
+ const pLabel='Sila pilih program pengajian';
+ [selectA,selectB].forEach(sel=>{
+  const placeholder=document.createElement('option');placeholder.value='';placeholder.textContent=pLabel;placeholder.disabled=true;
+  sel.appendChild(placeholder);
+  PROGRAM_INFO.forEach((p,i)=>{const option=document.createElement('option');option.value=String(i);option.textContent=p.name;sel.appendChild(option);});
+ });
+ function makeText(tag,txt,cls){const el=document.createElement(tag);el.textContent=txt;if(cls)el.className=cls;return el;}
+ function fillProgram(index){
+  const p=PROGRAM_INFO[index];if(!p)return;
+  selectA.value=String(index);
+  get('info-program-name').textContent=p.name;
+  get('info-program-duration').textContent=p.duration;
+  get('info-program-mqa').textContent=p.mqa;
+  get('info-program-field').textContent=p.field;
+  const skills=get('info-program-skills');skills.replaceChildren(...p.skills.map(s=>makeText('span',s)));
+  const career=get('info-career-content');career.replaceChildren();
+  if(p.jobs.length){
+   get('info-career-title').textContent='Peluang Pekerjaan';
+   const ul=document.createElement('ul');ul.className='info-jobs';
+   p.jobs.forEach(job=>ul.appendChild(makeText('li',job)));
+   career.appendChild(ul);
+   career.appendChild(makeText('p','Serta pelbagai jawatan lain dalam bidang yang berkaitan.','info-smallnote italic'));
+   career.appendChild(makeText('p','Tertakluk kepada kekosongan jawatan.','info-smallnote'));
+  }else{
+   get('info-career-title').textContent='Laluan Pengajian Seterusnya';
+   career.appendChild(makeText('p',p.pathway,'info-paragraph'));
+  }
+  get('info-program-wa').href=wa('Hello, saya ingin dapatkan maklumat lanjut tentang program '+p.name+' (Rujukan MQA: '+p.mqa+'), bidang pembelajaran dan peluang kerjaya.');
+ }
+ function fillFee(index){
+  const p=PROGRAM_INFO[index];if(!p)return;
+  selectB.value=String(index);
+  get('info-fee-name').textContent=p.name;
+  get('info-total-fee').textContent=rm(p.tuition);
+  get('info-semester-fee').textContent=rm(p.semester);
+  get('info-fee-duration').textContent='Tempoh pengajian: '+p.duration;
+  const isDiploma=p.name.startsWith('Diploma');
+  const support=get('info-support-list');
+  support.replaceChildren();
+  const lines=[...(isDiploma?['Hostel percuma selama 1 tahun untuk pelajar Diploma']:[]),'Bas berjadual percuma dari hostel ke kampus (Isnin–Jumaat)','T-shirt edisi khas NBUC dan lanyard percuma'];
+  lines.forEach(t=>support.appendChild(makeText('li',t)));
+  get('info-travel-wrap').hidden=!isDiploma;
+  get('info-fee-wa').href=wa('Hello, saya ingin dapatkan maklumat lanjut tentang yuran pengajian dan pilihan biasiswa atau bantuan kewangan bagi '+p.name+'.');
+ }
+ // Pemilihan dua bahagian diselaraskan; borang semakan SPM asal tidak diubah.
+ function selectProgram(index){fillProgram(index);fillFee(index);}
+ selectA.addEventListener('change',()=>selectProgram(Number(selectA.value)));
+ selectB.addEventListener('change',()=>selectProgram(Number(selectB.value)));
+ get('info-copy-mqa').addEventListener('click',async()=>{
+  const code=get('info-program-mqa').textContent;
+  try{
+   await navigator.clipboard.writeText(code);
+   get('info-copy-mqa').textContent='Disalin';
+  }catch(_){
+   const field=document.createElement('textarea');field.value=code;field.style.position='fixed';field.style.opacity='0';document.body.appendChild(field);field.select();document.execCommand('copy');field.remove();get('info-copy-mqa').textContent='Disalin';
+  }
+ });
+ get('info-apply-wa').href=wa('Hello, saya berminat untuk membuat permohonan pengajian bagi pengambilan Disember/Januari. Boleh bantu saya dengan proses pendaftaran?');
+ selectProgram(3);
+})();
+</script>
+
 </body>
 </html>
